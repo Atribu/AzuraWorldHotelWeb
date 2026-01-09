@@ -42,7 +42,7 @@ export default function Footer() {
                 <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
                   {t("ourAddress")}   Türkler Mah.  
                   <br />
-                  Cumhuriyet Cad. No:10
+                  Kargı Çayı Cad. No:10
                   <br />
                   Alanya / Turkey
                 </p>

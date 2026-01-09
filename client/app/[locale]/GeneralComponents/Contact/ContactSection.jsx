@@ -51,7 +51,7 @@ const ContactSection = () => {
             <div className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-2 ">
           {/* Mobil görünüm (lg'den küçük) */}
           <span className="capsizedText4 lg:hidden">
-          Türkler Mah. Cumhuriyet Cad. No:10 Alanya / Turkey
+          Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="capsizedText4 lg:hidden">
             {t("phoneColon")} <Link href="tel:+902425171234" className="underline z-[99] ">+90 242 517 12 34</Link>
@@ -65,7 +65,7 @@ const ContactSection = () => {
 
           {/* Desktop görünüm (lg ve üstü) */}
           <span className="hidden lg:block">
-          Türkler Mah. Cumhuriyet Cad. No:10 Alanya / Turkey
+          Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="hidden lg:block">
           {t("phoneColon")} <Link href="tel:+902425171234" className="underline z-[99] ">+90 242 517 12 34</Link>

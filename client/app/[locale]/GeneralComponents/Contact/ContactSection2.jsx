@@ -26,7 +26,7 @@ const ContactDetails = () => {
         <p className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-2 ">
           {/* Mobil görünüm (lg'den küçük) */}
           <span className="capsizedText4 lg:hidden">
-          Türkle Mah. Cumhuriyet Cad. No:10 Alanya / Turkey
+          Türkle Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="capsizedText4 lg:hidden">
           {t("phoneColon")}{" "}
@@ -49,7 +49,7 @@ const ContactDetails = () => {
 
           {/* Desktop görünüm (lg ve üstü) */}
           <span className="hidden lg:block">
-            Türkle Mah. Cumhuriyet Cad. No:10 Alanya / Turkey
+            Türkle Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="hidden lg:block">
           {t("phoneColon")}{" "}

@@ -56,7 +56,7 @@ const Page = () => {
         
         <ContactColumn icon={<CiLocationOn size={28} color='#1D1D1B'/>} title={t("ourAddress")}>
        <Link href="https://maps.app.goo.gl/usJ9fRr3Po35C3bw8" className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F] whitespace-nowrap'   rel="norefferer nofollower"
-                  target="_blank">Türkler Mah. Cumhuriyet Cad. <br/>No:10 Alanya / Turkey</Link>
+                  target="_blank">Türkler Mah. Kargı Çayı Cad. <br/>No:10 Alanya / Turkey</Link>
         </ContactColumn>
         
         <Divider />
