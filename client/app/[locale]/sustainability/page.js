@@ -67,13 +67,13 @@ const Page = () => {
     <div className="flex flex-col w-screen min-h-screen items-center justify-start">
       <Banner img={mainImg2} span="" header={t("sustainability")} />
       <a
-        href="/documents/AzuraHotelSurdurulebilirlikRaporu.pdf"
+        href="/documents/WYNDHAMALANYAHotelSürdürülebilirTurizmRaporu.pdf"
         onClick={handleClick}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center py-[10px] px-[20px] mt-10 text-[20px] cursor-pointer border-b hover:text-lagoBlack2 hover:border-lagoBlack2 hover:font-medium whitespace-nowrap font-jost"
       >
-        Sürdürülebilirlik Raporu 2024-2025
+        Sürdürülebilirlik Raporu 2025-2026
       </a>
 
  {/* Carousel  */}
