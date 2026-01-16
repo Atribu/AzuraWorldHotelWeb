@@ -3,23 +3,23 @@
 import React, { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Sayfa değişimini takip etmek için
 import Image from "next/image";
-import { Link } from '@/i18n/navigation';
+import { Link } from "@/i18n/navigation";
 import Hamburger from "./Icons/Hamburger";
 import Phone from "./Icons/Phone";
 import TripAdvisor from "./Icons/SocialMedia/TripAdvisor";
 import Google from "./Icons/SocialMedia/Google";
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
-import logosvg from "./Icons/azuraworld.webp";
+import logosvg from "./Icons/azuraworld.svg";
 import gradient4 from "./Icons/header.png";
 import DownArrow from "./Icons/DownArrow";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Form from "../Form";
 import { RxCross2 } from "react-icons/rx";
 import LangSwitcher from "@/LangSwitcher";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export default function Header() {
-  const t = useTranslations('Header');
+  const t = useTranslations("Header");
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -54,7 +54,7 @@ export default function Header() {
 
   return (
     <div className="flex w-screen">
-      <header className="absolute right-0  left-0 w-full z-[99] items-center justify-center">
+      <header className="absolute right-0 left-0 w-full z-[99] items-center justify-center">
         <div
           className="
             relative
@@ -77,7 +77,10 @@ export default function Header() {
 
           {!isMenuOpen && (
             <div className="flex flex-row-reverse md:flex-row items-center mb-[2%] md:mb-[0.5%] lg:mb-[0.5%] h-full justify-center ml-[76%] sm:ml-[82%] md:ml-[4%] ">
-              <button className="flex z-20 h-full items-center justify-center" onClick={toggleMenu}>
+              <button
+                className="flex z-20 h-full items-center justify-center"
+                onClick={toggleMenu}
+              >
                 <Hamburger
                   width={30}
                   height={30}
@@ -87,7 +90,7 @@ export default function Header() {
               </button>
               <div className="flex items-center justify-center h-full gap-[4px] mr-[15px] md:ml-[15px] z-[20]">
                 <span className="text-white text-[16px] font-medium leading-[125%] uppercase -tracking-[0.352px] font-jost capsizedText4">
-                <LangSwitcher />
+                  <LangSwitcher />
                 </span>
                 <DownArrow
                   className="flex items-center justify-center"
@@ -99,10 +102,8 @@ export default function Header() {
             </div>
           )}
 
-          {/* EN bar */}
-
           {/* Ortadaki Logo */}
-          <div className="absolute left-[24%] sm:left-[17%] md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-[65%] md:-translate-y-1/2">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[65%] md:-translate-y-1/2">
             <Link className="w-full items-center justify-center flex" href="/">
               <Image
                 src={logosvg}
@@ -133,12 +134,12 @@ export default function Header() {
                 h-[41px]
               "
             >
-             {t("contact")}
+              {t("contact")}
             </Link>
             <Link
-            href="https://azuraworld.orsmod.com/"
+              href="https://azuraworld.orsmod.com/"
               rel="norefferer nofollower"
-                  target="_blank"
+              target="_blank"
               className="
                 hidden 
                 md:flex
@@ -166,13 +167,11 @@ export default function Header() {
       </header>
 
       {/* Arkaya karartma (menü açıkken) */}
-      {isMenuOpen && (
-        <div onClick={toggleMenu} className="relative inset-0 z-[9999] " />
-      )}
+      {isMenuOpen && <div onClick={toggleMenu} className="relative inset-0 z-[9999] " />}
 
-      {/* Menü paneli => lighten blend mode lg:h-[calc(100vh-84.2px)]*/}
+      {/* Menü paneli */}
       <div
-        ref={menuRef} // **Referans atadık**
+        ref={menuRef}
         className={`
           fixed top-0 left-0
           w-full
@@ -188,36 +187,24 @@ export default function Header() {
               ? "translate-x-0 md:translate-x-0"
               : "translate-x-full md:-translate-x-full"
           }
-        `}>
-        {/* Menü kapatma butonu */}
-        {/* <button
-          onClick={toggleMenu}
-          className="absolute top-4 right-4 text-white text-3xl font-bold p-2 hover:text-gray-200 "
-        >
-          <div className='flex bg-black/50 items-center justify-center h-10 w-10 rounded-[4px] '>
-          <div className='flex h-[2px] w-6 rotate-[-45deg] flex-shrink-0 bg-white'></div>
-          <div className='flex absolute h-[2px] w-6 rotate-[45deg] flex-shrink-0 bg-white'></div>
-          </div>
-        </button> */}
-
+        `}
+      >
         {/* MENÜ LİNKLERİ */}
         <div className="flex flex-col w-[98%] ml-[1%] h-[95%] items-center justify-around py-[30px] lg:py-[15px] gap-[30px]">
-        <button
-              onClick={toggleMenu}
-              className="hidden lg:flex absolute top-8 right-6 text-[40px] p-2 text-stoneLight text-white"
-            >
-              <RxCross2 size={24} color="#fff" />
-            </button>
-        <div className="flex lg:hidden  w-[90%] lg:w-[90%] items-center justify-between -mt-[10px]">
+          <button
+            onClick={toggleMenu}
+            className="hidden lg:flex absolute top-8 right-6 text-[40px] p-2 text-stoneLight text-white"
+          >
+            <RxCross2 size={24} color="#fff" />
+          </button>
+
+          <div className="flex lg:hidden  w-[90%] lg:w-[90%] items-center justify-between -mt-[10px]">
             <Image
               src={logosvg}
               alt="Logo"
               className="flex object-contain w-[62px] h-[46px] items-center justify-center"
             />
-            <button
-              onClick={toggleMenu}
-              className="flex text-[40px] text-stoneLight text-white"
-            >
+            <button onClick={toggleMenu} className="flex text-[40px] text-stoneLight text-white">
               <RxCross2 size={24} color="#fff" />
             </button>
           </div>
@@ -228,7 +215,7 @@ export default function Header() {
                 onClick={() => setIsRoomsOpen(!isRoomsOpen)}
                 className="flex items-center font-normal leading-[26.667px] gap-[11.11px] w-[70%] md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
               >
-               {t("accommodation")}
+                {t("accommodation")}
                 <IoMdArrowDropdown
                   className={`w-4 h-4 transition-transform ${
                     isRoomsOpen ? "rotate-180" : "rotate-0"
@@ -238,58 +225,49 @@ export default function Header() {
 
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  isRoomsOpen
-                    ? "max-h-[200px] opacity-100"
-                    : "max-h-0 opacity-0"
+                  isRoomsOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="mt-2 space-y-2 pl-4  border-white/30 font-jost">
-                <Link
+                  <Link
                     href="/rooms/"
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
-                      {t("allrooms")}
+                    {t("allrooms")}
                   </Link>
                   <Link
                     href="/rooms/deluxeroom"
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
-                      {t("deluxe")}
+                    {t("deluxe")}
                   </Link>
                   <Link
                     href="/rooms/familyroom"
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
-                     {t("family")}
+                    {t("family")}
                   </Link>
                   <Link
                     href="/rooms/fantasyroom"
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
-                      {t("fantasy")}
+                    {t("fantasy")}
                   </Link>
-                  {/* <Link
-                    href="/rooms/handicaproom"
-                    className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
-                  >
-                      {t("handicap")}
-                  </Link> */}
-                  
-                 
                 </div>
               </div>
             </div>
+
             <Link
               href="/beachpools"
               className="block  font-normal leading-[26.667px] w-[70%] md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
             >
-                {t("beachPools")}
+              {t("beachPools")}
             </Link>
             <Link
               href="/restaurants"
               className="block font-normal leading-[26.667px] w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
             >
-            {t("restaurants")}
+              {t("restaurants")}
             </Link>
             <Link
               href="/bars"
@@ -308,7 +286,6 @@ export default function Header() {
               className="font-normal leading-[26.667px] items-center gap-[6px] flex w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
             >
               {t("kids")}
-             
             </Link>
             <Link
               href="/spawellness"
@@ -322,17 +299,11 @@ export default function Header() {
             >
               {t("entertainment")}
             </Link>
-            {/* <Link
-              href="/gallery"
-              className="block text-white  font-normal leading-normal w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
-            >
-             {t("gallery")}
-            </Link> */}
             <Link
               href="/about"
               className="block text-white font-normal leading-normal w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
             >
-            {t("ourhotel")}
+              {t("ourhotel")}
             </Link>
             <Link
               href="/connect"
@@ -351,10 +322,8 @@ export default function Header() {
               </span>
             </div>
 
-
-
             <button
-                onClick={() => setIsFormOpen(true)}
+              onClick={() => setIsFormOpen(true)}
               className="
              flex justify-center
              items-center
@@ -374,15 +343,15 @@ export default function Header() {
             >
               {t("letuscallyou")}
             </button>
-              {/* Contact Form bileşeni burada çağrılıyor */}
-          <Form isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+
+            <Form isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
 
             {/* Sosyal İkonlar */}
             <div className="flex items-center justify-center gap-4 mt-[18.79px]">
               <Link
                 href="https://www.tripadvisor.com.tr/Hotel_Review-g609052-d7391617-Reviews-Azura_Deluxe_Resort_Spa-Avsallar_Alanya_Turkish_Mediterranean_Coast.html"
                 target="_blank"
-                 rel="norefferer nofollower"
+                rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <TripAdvisor className="flex" width={34} height={34} />
@@ -390,7 +359,7 @@ export default function Header() {
               <Link
                 href="https://maps.app.goo.gl/usJ9fRr3Po35C3bw8"
                 target="_blank"
-                 rel="norefferer nofollower"
+                rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <Google className="flex" width={70} height={70} />
@@ -398,21 +367,23 @@ export default function Header() {
               <Link
                 href="https://www.facebook.com/AzuraDeluxeResort/"
                 target="_blank"
-                 rel="norefferer nofollower"
+                rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <FaFacebookF className="w-6 h-6" color="#505050" />
               </Link>
               <Link
                 href="https://www.youtube.com/channel/UC3Z23WuWOhmpFnbw9fLI1-g"
-                target="_blank" rel="norefferer nofollower"
+                target="_blank"
+                rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <FaYoutube className="w-6 h-6" color="#505050" />
               </Link>
               <Link
                 href="https://www.instagram.com/azuradeluxeresort/"
-                target="_blank"  rel="norefferer nofollower"
+                target="_blank"
+                rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <FaInstagram className="w-6 h-6" color="#505050" />
