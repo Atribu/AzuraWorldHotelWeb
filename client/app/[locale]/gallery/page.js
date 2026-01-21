@@ -5,7 +5,7 @@ import GalleryScrollSection from './components/GalleryScrollSection'
 import ContactSection2 from '../GeneralComponents/Contact/ContactSection2'
 import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Gallery');
   
   return (
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

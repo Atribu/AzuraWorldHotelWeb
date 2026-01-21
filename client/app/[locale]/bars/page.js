@@ -15,7 +15,7 @@ import {useTranslations} from 'next-intl';
 import ContactSection2 from '../GeneralComponents/Contact/ContactSection2'
 import BannerDark from "../GeneralComponents/BannerDark"
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Bars');
   const t2 = useTranslations('Bars.TwoImageSection');
   const t3 = useTranslations('Bars.BackgroundSection');
@@ -74,4 +74,4 @@ const otherOptions = [
   )
 }
 
-export default page
+export default Page

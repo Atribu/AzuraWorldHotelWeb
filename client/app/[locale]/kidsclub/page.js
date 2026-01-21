@@ -19,7 +19,7 @@ import BannerDark from '../GeneralComponents/BannerDark'
 import ClinaryReverseInfo from '../restaurants/components/ClinaryReverseInfo'
 import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('KidsClub');
   const t2 = useTranslations('KidsClub.TwoImageSection');
   const t3 = useTranslations('KidsClub.OtherOptions');
@@ -69,4 +69,4 @@ const kids = [
   )
 }
 
-export default page
+export default Page

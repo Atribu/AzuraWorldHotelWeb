@@ -16,7 +16,7 @@ import imgFantasy2 from "./images/fantasy2.png";
 import ContactSection2 from "../GeneralComponents/Contact/ContactSection2";
 import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Rooms.Room1');
   const t2 = useTranslations('Rooms.Room2');
   const t3 = useTranslations('Rooms.Room3');
@@ -63,4 +63,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

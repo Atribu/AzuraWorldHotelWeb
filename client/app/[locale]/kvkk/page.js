@@ -3,7 +3,7 @@ import TextSection from './components/TextSection'
 import imgBanner from "../about/images/Gal_sag.jpg"
 import MainBanner2 from '../GeneralComponents/MainBanner2'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='flex flex-col items-center justify-center overflow-hidden'>
         <MainBanner2 img={imgBanner} header="KVKK" text="" span=""/>
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

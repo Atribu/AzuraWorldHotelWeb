@@ -22,7 +22,7 @@ import blok2 from "../HomePage/Components/Images/blok1.jpg"
 import {useTranslations} from 'next-intl';
 
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('BeachPools');
   const t2 = useTranslations('BeachPools.TwoImageSection');
   const t3 = useTranslations('BeachPools.PoolSection');
@@ -112,4 +112,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

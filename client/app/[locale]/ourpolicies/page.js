@@ -17,7 +17,7 @@ import SustainabilityPolicyText from "./components/SustainabilityPolicyText";
 import EgitimSection from "./components/EgitimSection";
 import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Footer');
   const [activeTab, setActiveTab] = useState("politikalar");
 
@@ -219,4 +219,4 @@ Misafirler ve çalışanlarımızla düzenli plaj temizliği yaparak, plajlarım
   );
 };
 
-export default page;
+export default Page;

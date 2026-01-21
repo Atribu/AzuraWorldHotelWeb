@@ -17,7 +17,7 @@ import {useTranslations} from 'next-intl';
 
 const images =[img2,img3,img4,img1]
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("About");
   const t2 = useTranslations("About.InfoSection");
   const t3 = useTranslations("About.MissinonVision");
@@ -38,4 +38,4 @@ const texts3=[t3("clubsubtitle2"),t3("clubtitle2"),t3("clubtext2")]
   )
 }
 
-export default page
+export default Page

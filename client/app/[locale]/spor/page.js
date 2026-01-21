@@ -18,7 +18,7 @@ import {useTranslations} from 'next-intl';
 
 const galleryImages =[gallery1,gallery2,gallery3]
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("Sport");
   const t2 = useTranslations("Sport.InfoSection");
   const t3 = useTranslations("Sport.GallerySection");
@@ -40,4 +40,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

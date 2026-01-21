@@ -26,7 +26,7 @@ import mainBanner from "./images/Banner.jpg"
 import BannerDark from '../GeneralComponents/BannerDark'
 import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Restaurants');
   const t2 = useTranslations('Restaurants.TwoImagesSection');
   const t3 = useTranslations('Restaurants.CarouselSection');
@@ -107,4 +107,4 @@ const textsClinary=[t2("text"),t2("span"),t2("list1")]
   )
 }
 
-export default page
+export default Page
