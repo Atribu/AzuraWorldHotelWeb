@@ -20,7 +20,7 @@ import img8 from "./images/deluxe8.jpg";
 import img9 from "./images/deluxe9.webp";
 import BackgroundSection from '../subroomComponent/components/BackgroundSection'
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('DeluxeRoom');
   const t2 = useTranslations('DeluxeRoom.RoomFeatures');
   const t3 = useTranslations('DeluxeRoom.BackgroundSection');
@@ -77,4 +77,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

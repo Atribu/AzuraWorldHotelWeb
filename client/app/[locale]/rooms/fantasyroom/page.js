@@ -24,7 +24,7 @@ import img11 from "./images/fantasy11.jpg";
 import RoomsParallaxSection from '../components/RoomsParallaxSection'
 import RoomTour from '../subroomComponent/components/RoomTour'
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('FantasyRoom');
   const t2 = useTranslations('FantasyRoom.RoomFeatures');
   const t3 = useTranslations('FantasyRoom.BackgroundSection');
@@ -78,4 +78,4 @@ const features=[t2("feature1"),t2("feature2"),t2("feature3"),t2("feature4"),t2("
   )
 }
 
-export default page
+export default Page

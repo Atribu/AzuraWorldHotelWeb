@@ -21,7 +21,7 @@ import img9 from "./images/family9.webp";
 import img10 from "./images/family10.webp";
 import RoomTour from '../subroomComponent/components/RoomTour'
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('FamilyRoom');
   const t2 = useTranslations('FamilyRoom.RoomFeatures');
   const t3 = useTranslations('FamilyRoom.BackgroundSection');
@@ -76,4 +76,4 @@ const features=[t2("feature1"),t2("feature2"),t2("feature3"),t2("feature4"),t2("
   )
 }
 
-export default page
+export default Page
