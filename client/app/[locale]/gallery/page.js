@@ -1,6 +1,6 @@
 import React from 'react'
 import MainBanner2 from '../GeneralComponents/MainBanner2'
-import mainImg from "./images/Banner.jpg"
+import mainImg from "./images/Night6.webp"
 import GalleryScrollSection from './components/GalleryScrollSection'
 import ContactSection2 from '../GeneralComponents/Contact/ContactSection2'
 import {useTranslations} from 'next-intl';
