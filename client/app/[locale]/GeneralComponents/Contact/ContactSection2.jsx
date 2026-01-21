@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import minigallery from "./images/azuragallerynew.webp";
+import minigallery from "./images/Azuraworldgallery.webp";
 import { Link } from '@/i18n/navigation';
 import {
   PiInstagramLogoLight,
@@ -42,8 +42,8 @@ const ContactDetails = () => {
           </span>
           <span className="capsizedText4 lg:hidden">
           {t("emailAddress")}{" "}
-            <Link href="mailto:info@azuradeluxe.com" className="underline">
-              info@azuradeluxe.com
+            <Link href="mailto:info@azuraworld.com" className="underline">
+              info@azuraworld.com
             </Link>
           </span>
 
@@ -66,7 +66,7 @@ const ContactDetails = () => {
           <span className="hidden lg:block">
             {t("emailAddress")}{" "}
             <Link href="" className="underline">
-              info@azuradeluxe.com
+              info@azuraworld.com
             </Link>
           </span>
         </p>

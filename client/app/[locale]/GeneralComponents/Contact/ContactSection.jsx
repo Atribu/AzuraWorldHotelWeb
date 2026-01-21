@@ -74,7 +74,7 @@ const ContactSection = () => {
           {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>
           </span>
           <span className="hidden lg:block">
-          {t("emailAddress")}: <Link  href="mailto:info@azuradeluxe.com" className="underline z-20 cursor-pointer">info@azuraworld.com</Link>
+          {t("emailAddress")}: <Link  href="mailto:info@azuraworld.com" className="underline z-20 cursor-pointer">info@azuraworld.com</Link>
           </span>
         </div>
             

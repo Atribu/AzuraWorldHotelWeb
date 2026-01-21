@@ -70,7 +70,7 @@ const Page = () => {
         <Divider />
         
         <ContactColumn icon={<CiLocationOn size={28} color='#1D1D1B'/>} title={t("emailAddress")}>
-         <span className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F]'> info@azuradeluxe.com</span>
+         <span className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F]'> info@azuraworld.com</span>
         </ContactColumn>
       </div>
     </div>

@@ -36,7 +36,7 @@ export default function Footer() {
                 <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
                 {t("phone")}
                 </p>
-                <a href="mailto:info@azuradeluxe.com" className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
+                <a href="mailto:info@azuraworld.com" className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
                 {t("emailAddress")} info@azuraworld.com
                 </a>
                 <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
@@ -191,7 +191,7 @@ export default function Footer() {
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
                 <p className="text-[#FBFBFB] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                info@azuradeluxe.com
+                info@azuraworld.com
                 </p>
               </div>
             </div>
@@ -317,7 +317,7 @@ export default function Footer() {
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
                 <p className="text-[#FBFBFB] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                info@azuradeluxe.com
+                info@azuraworld.com
                 </p>
               </div>
             </div>
