@@ -3,7 +3,7 @@ import React,{ useEffect, useRef } from "react";
 import Image from 'next/image'
 import imgBackground from "./images/darkgallerybg.png"
 import LeafSvg from '../Header/Icons/LeafSvg'
-import minigallery from "./images/azuragallerynew.webp"
+import minigallery from "./images/Azuraworldgallery.webp"
 import Link from 'next/link'
 import { PiInstagramLogoLight,PiFacebookLogoLight, PiYoutubeLogoLight} from "react-icons/pi";
 import {useTranslations} from 'next-intl';
@@ -74,7 +74,7 @@ const ContactSection = () => {
           {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>
           </span>
           <span className="hidden lg:block">
-          {t("emailAddress")}: <Link  href="mailto:info@azuradeluxe.com" className="underline z-20 cursor-pointer">info@azuradeluxe.com</Link>
+          {t("emailAddress")}: <Link  href="mailto:info@azuradeluxe.com" className="underline z-20 cursor-pointer">info@azuraworld.com</Link>
           </span>
         </div>
             
