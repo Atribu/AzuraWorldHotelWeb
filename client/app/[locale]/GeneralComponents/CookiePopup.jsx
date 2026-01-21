@@ -843,10 +843,10 @@ const CookiePopup = () => {
             https://tophotels.ru/hotel/al24898
           </li>
           <li>
-            Azura Deluxe Hotel Facebook sayfası https://www.facebook.com/azuradeluxeresort
+            Azura Deluxe Hotel Facebook sayfası https://www.facebook.com/azuraworldhotel
           </li>
           <li>
-            Azura Deluxe Hotel İnstagram sayfası https://www.instagram.com/azuradeluxeresort/
+            Azura Deluxe Hotel İnstagram sayfası https://www.instagram.com/azuraworldhotel/
           </li>
           <li>
             Azura Deluxe Hotel Youtube sayfası

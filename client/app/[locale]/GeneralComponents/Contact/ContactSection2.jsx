@@ -21,7 +21,7 @@ const ContactDetails = () => {
           {t("contactForMore")}
         </span>
         <h2 className="font-marcellus font-normal text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] 2xl:text-[44px] leading-[150%] lg:leading-[57.6px] capsizedText3 lg:capsizedText2">
-          @AzuraWorld
+          @azuraworldhotel
         </h2>
         <p className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-2 ">
           {/* Mobil görünüm (lg'den küçük) */}
@@ -42,8 +42,8 @@ const ContactDetails = () => {
           </span>
           <span className="capsizedText4 lg:hidden">
           {t("emailAddress")}{" "}
-            <Link href="mailto:info@azuraworld.com" className="underline">
-              info@azuraworld.com
+            <Link href="mailto:info@azuraworldhotel.com" className="underline">
+              info@azuraworldhotel.com
             </Link>
           </span>
 
@@ -66,14 +66,14 @@ const ContactDetails = () => {
           <span className="hidden lg:block">
             {t("emailAddress")}{" "}
             <Link href="" className="underline">
-              info@azuraworld.com
+              info@azuraworldhotel.com
             </Link>
           </span>
         </p>
         <div className="flex gap-[20px] whitespace-nowrap">
           <div className="flex items-center justify-center gap-[18px]">
             <Link
-              href="https://www.instagram.com/azuradeluxeresort/"
+              href="https://www.instagram.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -82,7 +82,7 @@ const ContactDetails = () => {
             </Link>
             {/* <PiMetaLogoLight size={30} /> */}
             <Link
-              href="https://www.facebook.com/AzuraDeluxeResort/"
+              href="https://www.facebook.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >

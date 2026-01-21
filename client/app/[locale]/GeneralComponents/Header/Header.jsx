@@ -9,7 +9,7 @@ import Phone from "./Icons/Phone";
 import TripAdvisor from "./Icons/SocialMedia/TripAdvisor";
 import Google from "./Icons/SocialMedia/Google";
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
-import logosvg from "./Icons/azuraworld.svg";
+import logosvg from "./Icons/azuraworldbeyaz1.svg";
 import gradient4 from "./Icons/header.png";
 import DownArrow from "./Icons/DownArrow";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -365,23 +365,23 @@ export default function Header() {
                 <Google className="flex" width={70} height={70} />
               </Link>
               <Link
-                href="https://www.facebook.com/AzuraDeluxeResort/"
+                href="https://www.facebook.com/azuraworldhotel/"
                 target="_blank"
                 rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <FaFacebookF className="w-6 h-6" color="#505050" />
               </Link>
-              <Link
+              {/* <Link
                 href="https://www.youtube.com/channel/UC3Z23WuWOhmpFnbw9fLI1-g"
                 target="_blank"
                 rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <FaYoutube className="w-6 h-6" color="#505050" />
-              </Link>
+              </Link> */}
               <Link
-                href="https://www.instagram.com/azuradeluxeresort/"
+                href="https://www.instagram.com/azuraworldhotel/"
                 target="_blank"
                 rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"

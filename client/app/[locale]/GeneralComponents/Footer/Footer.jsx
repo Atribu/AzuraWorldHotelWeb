@@ -9,7 +9,7 @@ import {
   FaTripadvisor
 } from "react-icons/fa";
 import { Link } from '@/i18n/navigation';
-import logosvg from "../Header/Icons/azuraworld.webp";
+import logosvg from "../Header/Icons/azuraworldbeyaz1.webp";
 import Phone from "../Header/Icons/Phone";
 import LocationSvg from "./LocationSvg";
 import MessageSvg from "./MessageSvg";
@@ -36,8 +36,8 @@ export default function Footer() {
                 <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
                 {t("phone")}
                 </p>
-                <a href="mailto:info@azuraworld.com" className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
-                {t("emailAddress")} info@azuraworld.com
+                <a href="mailto:info@azuraworldhotel.com" className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
+                {t("emailAddress")} info@azuraworldhotel.com
                 </a>
                 <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
                   {t("ourAddress")}   Türkler Mah.  
@@ -65,7 +65,7 @@ export default function Footer() {
           {/* Sosyal ikonlar */}
           <div className="grid grid-cols-2 lg:flex items-center gap-[32px]">
             <Link
-              href="https://www.instagram.com/azuradeluxeresort/"
+              href="https://www.instagram.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -73,7 +73,7 @@ export default function Footer() {
               <FaInstagram className="w-[30px] h-[32px]" />
             </Link>
             <Link
-              href="https://www.facebook.com/AzuraDeluxeResort/"
+              href="https://www.facebook.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -81,14 +81,14 @@ export default function Footer() {
               <FaFacebook className="w-[30px] h-[32px]" />
             </Link>
            
-            <Link
+            {/* <Link
               href="https://www.youtube.com/channel/UC3Z23WuWOhmpFnbw9fLI1-g"
               target="_blank"
               rel="norefferer nofollower"
             >
               {" "}
               <FaYoutube className="w-[30px] h-[32px]" />
-            </Link>
+            </Link> */}
           </div>
 
           {/* Alt linkler */}
@@ -191,7 +191,7 @@ export default function Footer() {
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
                 <p className="text-[#FBFBFB] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                info@azuraworld.com
+                info@azuraworldhotel.com
                 </p>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function Footer() {
           {/* Sosyal ikonlar */}
           <div className="flex items-center gap-[32px]">
           <Link
-              href="https://www.instagram.com/azuradeluxeresort/"
+              href="https://www.instagram.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -212,7 +212,7 @@ export default function Footer() {
               <FaInstagram className="w-[30px] h-[32px]" />
             </Link>
             <Link
-              href="https://www.facebook.com/AzuraDeluxeResort/"
+              href="https://www.facebook.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -317,7 +317,7 @@ export default function Footer() {
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
                 <p className="text-[#FBFBFB] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                info@azuraworld.com
+                info@azuraworldhotel.com
                 </p>
               </div>
             </div>
@@ -406,7 +406,7 @@ export default function Footer() {
             </div>
           </div> */}
           <Link
-              href="https://www.instagram.com/azuradeluxeresort/"
+              href="https://www.instagram.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
               className="hidden md:flex"
@@ -416,7 +416,7 @@ export default function Footer() {
             </Link>
             <Link
             className="hidden md:flex"
-              href="https://www.facebook.com/AzuraDeluxeResort/"
+              href="https://www.facebook.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -444,7 +444,7 @@ export default function Footer() {
             </Link></div>
             <div className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "> <BSvg className="flex" width={70} height={63}/></div>
             <div className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "><Link
-              href="https://www.facebook.com/AzuraDeluxeResort/"
+              href="https://www.facebook.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >
@@ -460,7 +460,7 @@ export default function Footer() {
               <FaYoutube className="w-[30px] h-[32px]" />
             </Link></div>
             <div className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center"><Link
-              href="https://www.instagram.com/azuradeluxeresort/"
+              href="https://www.instagram.com/azuraworldhotel/"
               target="_blank"
               rel="norefferer nofollower"
             >

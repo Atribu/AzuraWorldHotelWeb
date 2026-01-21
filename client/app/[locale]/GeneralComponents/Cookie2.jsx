@@ -364,8 +364,8 @@ const Cookie2 = ({ isOpen, onClose }) => {
         https://www.holidaycheck.de/hi/lago-hotel/2e44d958-7e5e-4423-92b2-84bb298826b0
         Azura Deluxe Hotel için TopHotels yorum sayfası 
         https://tophotels.ru/hotel/al24898 Azura Deluxe Hotel Facebook sayfası 
-        https://www.facebook.com/AzuraDeluxeResort Azura Deluxe Hotel İnstagram sayfası 
-        https://www.instagram.com/AzuraDeluxeResort/ Azura Deluxe Hotel Youtube
+        https://www.facebook.com/azuraworldhotel Azura Deluxe Hotel İnstagram sayfası 
+        https://www.instagram.com/azuraworldhotel/ Azura Deluxe Hotel Youtube
         sayfası https://www.youtube.com/channel/UCjbL19l36uYQEdy2EEw1nLQ  Diğer
         internet sitelerine bağlantılar İnternet sitemizdeki içerikler üçüncü
         taraflara ait internet sitelerine bağlantılar içerebilir ve bu internet
