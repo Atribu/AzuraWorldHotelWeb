@@ -6,11 +6,11 @@ import SpaReverseInfo from '../spawellness/components/SpaReverseInfo'
 import MissionVisionSection from './components/MissionVisionSection'
 import EmblaCarousel from "../HomePage/Components/Slider/Slider1"
 import KidsMomentCarousel from '../kidsclub/components/KidsMomentCarousel'
-import img1 from "./images/gal_sol.jpg"
-import img2 from "./images/gal_orta.jpg"
-import img3 from "./images/Gal_sag.jpg"
-import img4 from "./images/gal_son.jpg"
-import leftImg from "./images/1.jpg"
+import img1 from "./images/Night1.webp"
+import img2 from "./images/Night9.webp"
+import img3 from "./images/Night13.webp"
+import img4 from "./images/Night22.webp"
+import leftImg from "./images/Genel8.webp"
 import rightImg from "./images/2.jpg"
 import ContactSection2 from '../GeneralComponents/Contact/ContactSection2'
 import {useTranslations} from 'next-intl';
