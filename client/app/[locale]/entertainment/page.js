@@ -1,6 +1,6 @@
 import React from 'react'
 import MainBannerSection from './components/MainBannerSection'
-import mainImg from "./images/ent_ban.jpg"
+import mainImg from "./images/Genel21.webp"
 import ActivitiesSection from './components/ActivitiesSection'
 import EntertainmentTypesSection from './components/EntertainmentTypesSection'
 import ContactSection2 from '../GeneralComponents/Contact/ContactSection2'

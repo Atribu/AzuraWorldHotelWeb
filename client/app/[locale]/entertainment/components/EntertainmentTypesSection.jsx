@@ -2,9 +2,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from 'next/image'
-import fitness from "../images/FITNESSCENTER.jpg"
-import kids from "../images/kids3.jpg"
-import water from "../images/5042.jpg"
+import fitness from "../images/Aquapark3.webp"
+import kids from "../images/Miniclub3.webp"
+import water from "../images/Meeting4.webp"
 import beachvoley from "../../gallery/images/entertainment/1.jpg"
 import tennis from "../images/kids4.jpg"
 import cinema from "../images/kids1.jpg"
