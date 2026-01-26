@@ -98,7 +98,7 @@ const ContactSection = () => {
               {" "}
               <PiFacebookLogoLight size={28} />
             </Link>
-            <Link
+            {/* <Link
             className="flex z-20"
               href="https://www.youtube.com/channel/UC3Z23WuWOhmpFnbw9fLI1-g"
               target="_blank"
@@ -106,7 +106,7 @@ const ContactSection = () => {
             >
               {" "}
               <PiYoutubeLogoLight size={28} />
-            </Link>
+            </Link> */}
                 </div>
                 <div className='flex bg-black h-[20px] w-[1px]'></div>
                 <Link href="https://azuraworld.orsmod.com/"  target="_blank"
