@@ -89,14 +89,14 @@ const ContactDetails = () => {
               {" "}
               <PiFacebookLogoLight size={28} />
             </Link>
-            <Link
+            {/* <Link
               href="https://www.youtube.com/channel/UC3Z23WuWOhmpFnbw9fLI1-g"
               target="_blank"
               rel="norefferer nofollower"
             >
               {" "}
               <PiYoutubeLogoLight size={28} />
-            </Link>
+            </Link> */}
           </div>
           <div className="flex bg-black h-[20px] w-[1px] self-center"></div>
           <Link href="https://azuraworld.orsmod.com/"  target="_blank"
