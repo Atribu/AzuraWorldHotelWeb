@@ -61,11 +61,11 @@ export default function Slider1({ slides }) {
   const t = useTranslations("Homepage.EmblaCarousel");
 
   const DEFAULT_SLIDES = [
-    { src: require("./Images/accommodation.jpg"), title: t("accommodation"), link: "/rooms" },
-    { src: require("./Images/Flavours.jpg"), title: t("restaurants"), link: "/restaurants" },
-    { src: require("./Images/Beachandpool.jpg"), title: t("beachPools"), link: "/beachpools" },
-    { src: require("./Images/Entertainment.jpg"), title: t("experiences"), link: "/entertainment" },
-    { src: require("./Images/kids.jpg"), title: t("kids"), link: "/kidsclub" },
+    { src: require("./Images/Azuraword1.webp"), title: t("accommodation"), link: "/rooms" },
+    { src: require("./Images/Azuraword4.webp"), title: t("restaurants"), link: "/restaurants" },
+    { src: require("./Images/Azuraword2.webp"), title: t("beachPools"), link: "/beachpools" },
+    { src: require("./Images/Azuraword3.webp"), title: t("experiences"), link: "/entertainment" },
+    { src: require("./Images/Azuraword5.webp"), title: t("kids"), link: "/kidsclub" },
   ];
 
   const slidesOriginal = slides || DEFAULT_SLIDES;

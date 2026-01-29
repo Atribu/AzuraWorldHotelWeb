@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import img1 from "./Images/blok2.jpg"
-import img2 from "./Images/blok1.jpg"
+import img2 from "./Images/blok1.webp"
 import Link from 'next/link';
 
 // Örnek resim importları (kendi resimlerinizi import edin)
