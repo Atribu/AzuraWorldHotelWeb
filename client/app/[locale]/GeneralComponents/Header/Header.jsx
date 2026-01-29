@@ -348,22 +348,22 @@ export default function Header() {
 
             {/* Sosyal İkonlar */}
             <div className="flex items-center justify-center gap-4 mt-[18.79px]">
-              <Link
+              {/* <Link
                 href="https://www.tripadvisor.com.tr/Hotel_Review-g609052-d7391617-Reviews-Azura_Deluxe_Resort_Spa-Avsallar_Alanya_Turkish_Mediterranean_Coast.html"
                 target="_blank"
                 rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <TripAdvisor className="flex" width={34} height={34} />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://maps.app.goo.gl/usJ9fRr3Po35C3bw8"
                 target="_blank"
                 rel="norefferer nofollower"
                 className="bg-white h-[42.412px] w-[42.412px] rounded-[4px] shadow-custom flex items-center justify-center"
               >
                 <Google className="flex" width={70} height={70} />
-              </Link>
+              </Link> */}
               <Link
                 href="https://www.facebook.com/azuraworldhotel/"
                 target="_blank"
