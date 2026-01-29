@@ -7,30 +7,36 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
-// Tekil slayt bileşeni
-function Slide({ slide, marginClass }) {
+function Slide({ slide, marginClass, priority = false }) {
   return (
     <div
       className={`
-        relative
-        shrink-0
-        flex 
-        justify-center 
-        items-center
-        ${marginClass}
+        relative shrink-0 flex justify-center items-center ${marginClass}
         flex-[0_0_auto]
-        lg:min-h-[540px]
-        lg:w-[360px]
+        lg:w-[360px] lg:h-[540px]
         md:w-[270px] md:h-[405px]
-        h-[266px] w-[177.3px]
+        w-[177.3px] h-[266px]
+        overflow-hidden
+        will-change-transform transform-gpu
+        [backface-visibility:hidden] [transform:translateZ(0)]
       `}
     >
       <Image
         src={slide.src}
         alt={slide.title}
-        width={360}
-        height={540}
-        className="lg:w-full lg:h-full md:w-[270px] md:h-[405px] h-[266px] w-[177.3px] object-cover"
+        fill
+        priority={priority}
+        quality={100}
+        sizes="(min-width: 1024px) 360px, (min-width: 768px) 270px, 177px"
+        className="
+          object-cover object-center
+          will-change-transform transform-gpu
+          [backface-visibility:hidden] [transform:translateZ(0)]
+        "
+        // ✅ TEST: bunu 1 kez açıp dene.
+        // Eğer değişiklik YOKSA -> görsellerin dosya çözünürlüğü düşük/soft export.
+        // Eğer netleşirse -> next/image optimize kaynaklı, next.config ile çözeriz.
+        // unoptimized
       />
 
       <div className="absolute inset-0 bg-lagoBlack/40 z-[1]" />
@@ -38,8 +44,7 @@ function Slide({ slide, marginClass }) {
       <a
         href={slide.link}
         className="absolute inset-0 flex items-center justify-center pb-4
-          text-white
-          text-[20px] md:text-[30px] lg:text-[40px]
+          text-white text-[20px] md:text-[30px] lg:text-[40px]
           leading-[9.852px] -tracking-[0.44px] font-normal
           md:leading-[15px] lg:leading-[20px]
           md:-tracking-[0.66px] lg:-tracking-[0.88px]
@@ -56,31 +61,11 @@ export default function Slider1({ slides }) {
   const t = useTranslations("Homepage.EmblaCarousel");
 
   const DEFAULT_SLIDES = [
-    {
-      src: require("./Images/accommodation.jpg"),
-      title: t("accommodation"),
-      link: "/rooms",
-    },
-    {
-      src: require("./Images/Flavours.jpg"),
-      title: t("restaurants"),
-      link: "/restaurants",
-    },
-    {
-      src: require("./Images/Beachandpool.jpg"),
-      title: t("beachPools"),
-      link: "/beachpools",
-    },
-    {
-      src: require("./Images/Entertainment.jpg"),
-      title: t("experiences"),
-      link: "/entertainment",
-    },
-    {
-      src: require("./Images/kids.jpg"),
-      title: t("kids"),
-      link: "/kidsclub",
-    },
+    { src: require("./Images/accommodation.jpg"), title: t("accommodation"), link: "/rooms" },
+    { src: require("./Images/Flavours.jpg"), title: t("restaurants"), link: "/restaurants" },
+    { src: require("./Images/Beachandpool.jpg"), title: t("beachPools"), link: "/beachpools" },
+    { src: require("./Images/Entertainment.jpg"), title: t("experiences"), link: "/entertainment" },
+    { src: require("./Images/kids.jpg"), title: t("kids"), link: "/kidsclub" },
   ];
 
   const slidesOriginal = slides || DEFAULT_SLIDES;
@@ -106,13 +91,8 @@ export default function Slider1({ slides }) {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const scrollPrev = useCallback(() => {
-    emblaApi?.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    emblaApi?.scrollNext();
-  }, [emblaApi]);
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -124,32 +104,39 @@ export default function Slider1({ slides }) {
     emblaApi.on("select", onSelect);
     onSelect();
 
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
+    return () => emblaApi.off("select", onSelect);
   }, [emblaApi, slidesOriginal.length]);
 
   return (
     <section className="w-full">
-      {/* Slider wrapper: relative + burada okları konumlandırıyoruz */}
       <div className="relative w-full overflow-hidden">
-        {/* Carousel */}
         <div
           ref={emblaRef}
-          className="overflow-hidden w-full lg:w-[87.4%] lg:ml-[5.8%]"
+          className="
+            overflow-hidden w-full lg:w-[87.4%] lg:ml-[5.8%]
+            will-change-transform transform-gpu
+            [backface-visibility:hidden] [transform:translateZ(0)]
+          "
         >
-          <div className="flex md:h-[405px] lg:h-[540px] w-auto">
+          <div
+            className="
+              flex md:h-[405px] lg:h-[540px] w-auto
+              will-change-transform transform-gpu
+              [backface-visibility:hidden] [transform:translateZ(0)]
+            "
+          >
             {slidesCombined.map((slide, index) => (
               <Slide
                 key={index}
                 slide={slide}
                 marginClass="mr-[8.37px] md:mr-[12.75px] lg:mr-[17px]"
+                priority={index < 2}
               />
             ))}
           </div>
         </div>
 
-        {/* SOL OK (sadece md ve üstü) */}
+        {/* SOL OK */}
         <button
           className="hidden md:flex absolute left-2 lg:left-6 top-1/2 -translate-y-1/2
                      z-[999] p-2 rounded-full bg-black/40 hover:bg-black/60
@@ -161,7 +148,7 @@ export default function Slider1({ slides }) {
           <MdArrowBackIosNew size={26} color="white" />
         </button>
 
-        {/* SAĞ OK (sadece md ve üstü) */}
+        {/* SAĞ OK */}
         <button
           className="hidden md:flex absolute right-2 lg:right-6 top-1/2 -translate-y-1/2
                      z-[999] p-2 rounded-full bg-black/40 hover:bg-black/60

@@ -3,7 +3,7 @@ import Slider from "../../HomePage/Components/Slider/Slider2"
 import Slide1 from '../Images/Slide/Group427319247.jpg'
 import Slide2 from '../Images/Slide/Group427319248.jpg'
 import Slide3 from '../Images/Slide/Group427319249.jpg'
-import Slide4 from '../Images/Slide/Group427319250.jpg'
+import Slide4 from '../Images/Slide/Beach2.webp'
 import {useTranslations} from 'next-intl';
 
 const Beach3 = () => {
