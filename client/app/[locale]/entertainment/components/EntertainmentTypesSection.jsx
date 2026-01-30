@@ -60,13 +60,13 @@ const EntertainmentTypesSection = () => {
       image: cinema,
       link:"/beachpools"
     },
-    {
-      title: t("title7"),
-      category: t("nighttime"),
-      description: t("text7"),
-      image: sunset,
-      link:"/spor"
-    },
+    // {
+    //   title: t("title7"),
+    //   category: t("nighttime"),
+    //   description: t("text7"),
+    //   image: sunset,
+    //   link:"/spor"
+    // },
     {
       title: t("title8"),
       category: t("nighttime"),

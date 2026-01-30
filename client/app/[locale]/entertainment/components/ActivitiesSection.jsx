@@ -27,13 +27,13 @@ const ActivitiesSection = () => {
            </div>
            </div>
            
-            <div className='flex flex-col w-[300px] md:w-[538px] h-full relative'>
+            {/* <div className='flex flex-col w-[300px] md:w-[538px] h-full relative'>
             <Image src={nighttime} alt="nighttime" width={nighttime.width} height={nighttime.height} className='w-full'/>
            <div className='flex flex-col absolute bottom-[38px] left-[35px] items-start justify-center text-start gap-[15px] md:gap-[25px] pb-[10px] text-white '>
             <span className='text-[12px] font-normal uppercase  font-jost leading-normal tracking-[0.48px]'>{t("span2")}</span>
             <h4 className='font-marcellus text-[30px] font-normal leading-[120%] lg:capsizedText3 '>{t("nighttime")}</h4>
            </div>
-           </div>
+           </div> */}
            </div>
 
         </div>

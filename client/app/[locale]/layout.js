@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Azura Deluxe Hotel",
-  description: "Azura Deluxe Hotel",
+  title: "Azura World Hotel",
+  description: "Azura World Hotel",
 
   icons: {
     icon: '/logowhite.png',      
