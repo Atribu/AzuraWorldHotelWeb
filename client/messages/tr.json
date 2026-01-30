@@ -109,7 +109,7 @@
     },
     "TwoImageSection": {
       "subtitle": "AZURA WORLD HOTEL UNUTULMAZ ANLAR",
-      "title": "Şimdi Azura World deneyimini keşfedin!",
+      "title": "Şimdi Azura World Hotel deneyimini keşfedin!",
       "text1": "Azura World Hotel, Türkler bölgesinde Her Şey Dahil konseptiyle hizmet verir. Konforlu oda seçenekleri, spa alanları ve gün boyu yeme-içme noktalarıyla keyifli bir tatil sunar.",
       "text2": "Indoor Pool, Oasis Pool ve 13 farklı kaydıraklı Aquapark ile hem dinlenme hem de eğlence seçenekleri bir aradadır. Plaj alanı 125 metredir; plajda şezlong, şemsiye, kabin, WC ve duş imkânları mevcuttur.",
       "buttonText": " Galeriye Git"
@@ -161,7 +161,7 @@
     "buttonText2": "Deluxe Family Oda",
     "buttonText3": " Superior Oda",
     "subtitle": "SİZ VE AİLENİZ İÇİN KONFORLU KONAKLAMA",
-    "title": "Azura World Odaları",
+    "title": "Azura World Hotel Odaları",
     "text": "Azura World Hotel’de toplam 188 oda bulunur. Tüm odalarda TV, çay-kahve seti, kasa, minibar, VRF klima, elektronik kartlı giriş ve Wi-Fi mevcuttur. Çarşaflar 3 günde bir değiştirilir.",
     "checkin": "GİRİŞ: 14:00",
     "checkout": "ÇIKIŞ: 12:00",
@@ -693,7 +693,7 @@
     "galleryTitle": "Çocuklarınızın Mutlu Anları"
   },
   "Spa": {
-    "subtitle": "AZURA WORLD SPA & WELLNESS’TE RAHATLAYIN",
+    "subtitle": "AZURA WORLD HOTEL SPA & WELLNESS’TE RAHATLAYIN",
     "title": "Spa & Wellness",
     "text": "Türk hamamı, sauna ve buhar odasıyla kendinizi ödüllendirin. Masaj hizmetleri ekstra ücretlidir.",
     "title1": "Masaj Terapileri",
@@ -703,7 +703,7 @@
     "time": "Çalışma Saatleri: 08:00 - 20:00",
     "InfoSection": {
       "subtitle1": "Zihninizi Yenileyin",
-      "title1": "Azura World’de Wellness",
+      "title1": "Azura World Hotel’de Wellness",
       "text1": "Profesyonel ekibimizle vücudunuzu dinlendirin.",
       "subtitle2": "Geleneksel Alanlar",
       "title2": "Sauna & Hamam",
@@ -744,7 +744,7 @@
     "text": "Tatiliniz boyunca formda kalmanız için Fitness merkezimiz ve sahalarımız hizmetinizdedir.",
     "InfoSection": {
       "subtitle1": " Aktif Yaşam",
-      "title1": " Azura World Fitness",
+      "title1": " Azura World Hotel Fitness",
       "text1": "Modern ekipmanlarla donatılmış salonumuz 08:00 - 20:00 arası ücretsizdir.",
       "subtitle2": "Açık Hava Sporları",
       "title2": " Tenis & Basketbol",
@@ -781,11 +781,11 @@
       "buttonText": "DAHA FAZLASINI KEŞFET"
     },
     "MissinonVision": {
-      "subtitle": "Azura World Değerleri",
+      "subtitle": "Azura World Hotel Değerleri",
       "title": " Misyonumuz ve Vizyonumuz",
       "text": "Misyonumuz, misafirlerimize yüksek standartlarda bir tatil deneyimi sunmaktır. Vizyonumuz, Alanya bölgesinde tercih edilen öncü konaklama merkezi olmaktır.",
       "clubsubtitle1": "Neden Biz?",
-      "clubtitle1": " Azura World Farkı",
+      "clubtitle1": " Azura World Hotel Farkı",
       "clubtext1": "Zengin yeme-içme seçenekleri, devasa havuzları, 13 kaydıraklı aquaparkı ve kapsamlı spa merkeziyle tatil keyfini doruğa çıkarıyoruz.",
       "clubsubtitle2": "Hizmetlerimiz",
       "clubtitle2": " Kapsamlı Olanaklar",
@@ -795,7 +795,7 @@
   },
   "Gallery": {
     "subtitle": "Otelimizi Keşfedin",
-    "title": "Azura World Galerisi",
+    "title": "Azura World Hotel Galerisi",
     "general": "Genel Görünüm",
     "rooms": "Odalar",
     "meeting": "Toplantı",
