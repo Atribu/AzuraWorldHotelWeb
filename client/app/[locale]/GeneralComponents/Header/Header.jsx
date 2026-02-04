@@ -299,6 +299,10 @@ export default function Header() {
             >
               {t("entertainment")}
             </Link>
+            <Link href="/gallery" 
+            className="block text-white  font-normal leading-normal w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none">
+              {t("gallery")}
+            </Link>
             <Link
               href="/about"
               className="block text-white font-normal leading-normal w-[70%]  md:w-[90%] lg:max-w-[360.114px] py-[11px] border-b border-b-[#A6A6A6] lg:border-none"
