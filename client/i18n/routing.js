@@ -38,11 +38,11 @@ export const routing = defineRouting({
       ru:'/nomera/номерсемейныйswimup'
     },
 
-    '/rooms/fantasyroom': {
-      en:'/rooms/fantasyroom',
-      de:'/zimmer/fantasiezimmer',
-      tr:'/odalar/fantazioda',
-      ru:'/nomera/номерфэнтези'
+    '/rooms/superiorroom': {
+      en:'/rooms/superiorroom',
+      de:'/zimmer/superiorzimmer',
+      tr:'/odalar/superioroda',
+      ru:'/nomera/номерсупериор'
     },
 
     '/rooms/handicaproom': {

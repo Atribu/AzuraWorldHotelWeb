@@ -12,7 +12,7 @@ import OtherOptions from "../subroomComponent/components/OtherOptions";
 import ContactSection2 from "../../GeneralComponents/Contact/ContactSection2";
 
 import options1 from "../deluxeroom/images/deluxe4.jpg";
-import options2 from "../fantasyroom/images/fantasy4.jpg";
+import options2 from "../superiorroom/images/fantasy4.jpg";
 
 import img1 from "../deluxeroom/images/deluxe1.jpg";
 import img2 from "../deluxeroom/images/deluxe2.jpg";
@@ -79,7 +79,7 @@ const HandicapRoomPage = () => {
       size: t4("area2"),
       capacity: t4("person2"),
       text: t4("text2"),
-      link: "/rooms/fantasyroom",
+      link: "/rooms/superiorroom",
     },
   ];
 

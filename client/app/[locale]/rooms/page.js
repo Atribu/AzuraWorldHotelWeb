@@ -47,14 +47,14 @@ const Page = () => {
       />
 
       <RoomsSection
-       id="fantasyroom"
+       id="superiorroom"
         img={imgFantasy}
         img2={imgFantasy2}
         header={t3("title")}
         text={t3("text")}
         span={t3("area")}
         span2={t3("view")}
-        link="/rooms/fantasyroom" 
+        link="/rooms/superiorroom" 
       />
 
       <RoomsParallaxSection />

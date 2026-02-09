@@ -350,7 +350,7 @@ export default function Footer() {
                   {t("deluxe")}
                 </Link>
                 <Link
-                  href="/rooms/fantasyroom"
+                  href="/rooms/superiorroom"
                   className="block text-[14px] text-[#A6A6A6] leading-[29.639px] uppercase"
                 >
                 {t("fantasy")}

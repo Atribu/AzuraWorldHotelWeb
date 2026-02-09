@@ -248,7 +248,7 @@ export default function Header() {
                     {t("family")}
                   </Link>
                   <Link
-                    href="/rooms/fantasyroom"
+                    href="/rooms/superiorroom"
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
                     {t("fantasy")}

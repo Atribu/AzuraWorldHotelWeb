@@ -238,7 +238,7 @@ export default function HeaderWhite() {
                   <Link href="/rooms/familyroom" className="block text-[14px] leading-[29.639px] uppercase">
                     {t("family")}
                   </Link>
-                  <Link href="/rooms/fantasyroom" className="block text-[14px] leading-[29.639px] uppercase">
+                  <Link href="/rooms/superiorroom" className="block text-[14px] leading-[29.639px] uppercase">
                     {t("fantasy")}
                   </Link>
                 </div>

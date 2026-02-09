@@ -7,7 +7,7 @@ import OtherOptions from '../subroomComponent/components/OtherOptions'
 import backgroundImg from "../subroomComponent/images/odafull.webp"
 import ContactSection2 from '@/app/[locale]/GeneralComponents/Contact/ContactSection2'
 import options1 from "../deluxeroom/images/deluxe4.jpg";
-import options2 from "../fantasyroom/images/fantasy4.jpg";
+import options2 from "./images/fantasy4.jpg";
 import options3 from "../familyroom/images/family1.webp";
 import {useTranslations} from 'next-intl';
 import img1 from "./images/fantasy1.webp";
@@ -25,11 +25,11 @@ import RoomsParallaxSection from '../components/RoomsParallaxSection'
 import RoomTour from '../subroomComponent/components/RoomTour'
 
 const Page = () => {
-  const t = useTranslations('FantasyRoom');
-  const t2 = useTranslations('FantasyRoom.RoomFeatures');
-  const t3 = useTranslations('FantasyRoom.BackgroundSection');
-  const t4 = useTranslations('FantasyRoom.OtherOptions');
-  const t5 = useTranslations('FantasyRoom.RoomTour');
+  const t = useTranslations('superiorroom');
+  const t2 = useTranslations('superiorroom.RoomFeatures');
+  const t3 = useTranslations('superiorroom.BackgroundSection');
+  const t4 = useTranslations('superiorroom.OtherOptions');
+  const t5 = useTranslations('superiorroom.RoomTour');
 
   const subroomBannerText=[t("span1"),t("span2"),t("span3")]
 const backgroundTexts=[t3("text"),t3("list1"),t3("list2")]
@@ -58,7 +58,7 @@ const features=[t2("feature1"),t2("feature2"),t2("feature3"),t2("feature4"),t2("
       size: t4("area2"),
       capacity: t4("person2"),
       text: t4("text2") ,
-      link: "/rooms/fantasyroom",
+      link: "/rooms/superiorroom",
     },
   
   ];

@@ -7,7 +7,7 @@ import OtherOptions from '../subroomComponent/components/OtherOptions'
 import backgroundImg from "../subroomComponent/images/odafull.webp"
 import ContactSection2 from '@/app/[locale]/GeneralComponents/Contact/ContactSection2'
 import options1 from "../deluxeroom/images/deluxe4.jpg";
-import options2 from "../fantasyroom/images/fantasy4.jpg";
+import options2 from "../superiorroom/images/fantasy4.jpg";
 import {useTranslations} from 'next-intl';
 import img1 from "./images/deluxe1.jpg";
 import img2 from "./images/deluxe2.jpg";
@@ -55,7 +55,7 @@ const Page = () => {
       size: t4("area2"),
       capacity: t4("person2"),
       text: t4("text2") ,
-      link: "/rooms/fantasyroom",
+      link: "/rooms/superiorroom",
     },
   
   ];

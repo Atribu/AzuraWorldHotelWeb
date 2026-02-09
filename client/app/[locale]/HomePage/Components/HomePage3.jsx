@@ -29,7 +29,7 @@ export default function HomePage3() {
       desc: t("roomText2"),
              area:t("area2"),
              span:t("view2"),
-             link:"/rooms/fantasyroom"
+             link:"/rooms/superiorroom"
     },
     {
       src: Deluxe,
