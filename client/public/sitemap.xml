@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://azuraworldhotel.com/tr</loc><lastmod>2026-02-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://azuraworldhotel.com/en</loc><lastmod>2026-02-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://azuraworldhotel.com/de</loc><lastmod>2026-02-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://azuraworldhotel.com/ru</loc><lastmod>2026-02-09</lastmod><priority>1.0</priority></url>
+
+  <url><loc>https://azuraworldhotel.com/tr/odalar</loc><priority>0.9</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/odalar/deluxeoda</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/odalar/aileoda</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/odalar/superioroda</loc><priority>0.8</priority></url>
+  
+  <url><loc>https://azuraworldhotel.com/en/rooms</loc><priority>0.9</priority></url>
+  <url><loc>https://azuraworldhotel.com/de/zimmer</loc><priority>0.9</priority></url>
+  <url><loc>https://azuraworldhotel.com/ru/rooms</loc><priority>0.9</priority></url>
+
+  <url><loc>https://azuraworldhotel.com/tr/restaurants</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/restaurants</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/bars</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/bars</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/plaj-havuz</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/beach-pools</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/spawellness</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/spawellness</loc><priority>0.8</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/entertainment</loc><priority>0.7</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/entertainment</loc><priority>0.7</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/kidsclub</loc><priority>0.7</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/kidsclub</loc><priority>0.7</priority></url>
+
+  <url><loc>https://azuraworldhotel.com/tr/about</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/about</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/connect</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/connect</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/gallery</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/gallery</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/news</loc><priority>0.6</priority></url>
+  <url><loc>https://azuraworldhotel.com/en/news</loc><priority>0.6</priority></url>
+
+  <url><loc>https://azuraworldhotel.com/tr/kvkk</loc><priority>0.3</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/terms-of-use</loc><priority>0.3</priority></url>
+  <url><loc>https://azuraworldhotel.com/tr/sustainability</loc><priority>0.5</priority></url>
+  <url><loc>https://azuraworldhotel.com/documents/Azura%20Hotel%20S%C3%BCrd%C3%BCr%C3%BClebilirlik%20Raporu%202023-2024.pdf</loc><priority>0.4</priority></url>
+</urlset>
