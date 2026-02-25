@@ -126,17 +126,23 @@ const EntertainmentTypesSection = () => {
         {/* Dinamik Kartlar */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 w-full items-center justify-center gap-[31px]">
           {activities.map((activity, index) => (
-            <div key={index} className="flex flex-col items-center justify-center relative mb-[180px]">
+            <div key={index} className="flex flex-col items-center justify-center relative mb-[200px]">
               <div className="w-full flex flex-col items-center justify-end cursor-pointer">
-                <Image src={activity.image} width={activity.image.width} height={activity.image.height} className="flex w-full" alt='activity'/>
-                <div className="absolute flex flex-col items-start justify-center bg-white gap-[25px] font-jost text-black w-[90%] p-[20px] -bottom-44">
+                <Image
+                  src={activity.image}
+                  width={activity.image.width}
+                  height={activity.image.height}
+                  className="w-full h-[250px] lg:h-[270px] object-cover"
+                  alt='activity'
+                />
+                <div className="absolute flex flex-col items-start justify-start bg-white gap-[14px] font-jost text-black w-[90%] h-[220px] lg:h-[230px] p-[20px] -bottom-44">
                   <span className="text-[12px] font-medium leading-[14px] tracking-[0.48px] uppercase">
                     {activity.category}
                   </span>
-                  <h4 className="text-[28px] lg:text-[30px] font-normal leading-[120%] capitalize font-marcellus lg:capsizedText3">
+                  <h4 className="text-[28px] lg:text-[30px] font-normal leading-[120%] capitalize font-marcellus lg:capsizedText3 min-h-[68px]">
                     {activity.title}
                   </h4>
-                  <p className="text-[14px] font-normal leading-[21px] capsizedText4">
+                  <p className="text-[14px] font-normal leading-[21px] capsizedText4 min-h-[63px] overflow-hidden">
                     {activity.description}
                   </p>
                 </div>
@@ -153,7 +159,7 @@ const EntertainmentTypesSection = () => {
             {activities.map((activity,index) => (
               <div
                 key={index}
-                className="flex-[0_0_auto] h-[415px] md:h-[390px] lg:h-[390px] min-w-0 mr-[1.5%]"
+                className="flex-[0_0_auto] h-[460px] md:h-[500px] lg:h-[500px] min-w-0 mr-[1.5%]"
               >
                 <div className="flex flex-col relative w-full items-center text-start justify-center gap-[15px] lg:gap-[20px] font-jost text-black ">
                   <Image
@@ -161,16 +167,16 @@ const EntertainmentTypesSection = () => {
                     alt={activity.title}
                     width={activity.image.width}
                     height={activity.image.height}
-                     className="flex h-[300px] md:h-[400px] w-auto md:w-full"
+                    className="w-full h-[260px] md:h-[300px] object-cover"
                   />
-                  <div className="absolute flex flex-col items-start justify-center bg-white gap-[25px] font-jost text-black w-[90%] p-[20px] -bottom-32">
+                  <div className="absolute flex flex-col items-start justify-start bg-white gap-[14px] font-jost text-black w-[90%] h-[200px] md:h-[220px] p-[20px] -bottom-32">
                   <span className="text-[12px] font-medium leading-[14px] tracking-[0.48px] uppercase">
                     {activity.category}
                   </span>
-                  <h4 className="text-[28px] lg:text-[30px] font-normal leading-[120%] capitalize font-marcellus lg:capsizedText3">
+                  <h4 className="text-[28px] lg:text-[30px] font-normal leading-[120%] capitalize font-marcellus lg:capsizedText3 min-h-[68px]">
                     {activity.title}
                   </h4>
-                  <p className="text-[14px] font-normal leading-[21px] capsizedText4">
+                  <p className="text-[14px] font-normal leading-[21px] capsizedText4 min-h-[63px] overflow-hidden">
                     {activity.description}
                   </p>
                 </div>

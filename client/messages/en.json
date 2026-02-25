@@ -160,6 +160,7 @@
     "buttonText1": "Deluxe Room",
     "buttonText2": "Deluxe Family Room",
     "buttonText3": "Superior Room",
+    "buttonText4": "Accessible Room",
     "subtitle": "COMFORTABLE ACCOMMODATION FOR YOU AND YOUR FAMILY",
     "title": "Azura World Hotel Rooms",
     "text": "There are a total of 188 rooms at Azura World Hotel. All rooms feature TV, tea-coffee set, safe, minibar, VRF air conditioning, electronic card entry, and Wi-Fi. Sheets are changed every 3 days.",
@@ -184,6 +185,13 @@
       "text": "Superior rooms range from 25–40 m². Maximum occupancy is 2 adults.",
       "area": "25–40 m²",
       "view": "Details: Pool and Land View",
+      "buttonText": "Explore"
+    },
+    "Room4": {
+      "title": "Accessible Room",
+      "text": "Designed to meet accessibility standards for a comfortable stay.",
+      "area": "Accessible Design",
+      "view": "Details: Barrier-Free Access",
       "buttonText": "Explore"
     },
     "Parallax": {

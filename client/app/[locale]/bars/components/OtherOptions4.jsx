@@ -28,7 +28,7 @@ const OtherOptionSlide = ({ room }) => (
         alt={room.title} 
         width={room.img.width} 
         height={room.img.height}
-        className="object-cover"
+        className="w-full h-[185px] md:h-[220px] lg:h-[245px] object-cover"
       />
       <span className="text-[12px] font-medium leading-normal tracking-[0.48px] uppercase">
         {room.description}

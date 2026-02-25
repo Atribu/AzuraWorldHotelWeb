@@ -18,7 +18,7 @@ const RoomsSection = ({img,img2, header,text,span,span2,link,id}) => {
             width={img.width}
             height={img.height}
             alt="Superior Rooms"
-            className="w-[50%] flex"
+            className="w-[50%] h-[220px] md:h-[320px] lg:h-[380px] object-cover flex"
           />
 
           <Image
@@ -26,7 +26,7 @@ const RoomsSection = ({img,img2, header,text,span,span2,link,id}) => {
             width={img2.width}
             height={img2.height}
             alt="Superior Rooms"
-            className="w-[50%] flex"
+            className="w-[50%] h-[220px] md:h-[320px] lg:h-[380px] object-cover flex"
           />
         </div>
 

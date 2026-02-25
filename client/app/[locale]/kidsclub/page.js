@@ -4,7 +4,7 @@ import KidsBamboo from './components/KidsBamboo'
 import KidsIconsSection from './components/KidsIconsSection'
 import KidsclubCarousel from './components/KidsclubCarousel'
 import ContactSection from '../GeneralComponents/Contact/ContactSection'
-import kids1 from "./images/kids7.jpg"
+import kids1 from "./images/KIDSPOOL1.webp"
 import kids2 from "./images/child_pool.jpg"
 import kids3 from "./images/2149046677.jpg"
 import CuisinesCarousel from '../restaurants/components/CuisinesCarousel'

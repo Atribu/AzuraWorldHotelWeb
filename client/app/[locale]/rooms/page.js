@@ -12,6 +12,8 @@ import imgdeluxe2 from "./images/deluxe.png";
 
 import imgFantasy from "./images/fantasy1.png";
 import imgFantasy2 from "./images/fantasy2.png";
+import imgHandicap from "./handicaproom/images/Oda4.webp";
+import imgHandicap2 from "./handicaproom/images/Oda5.webp";
 
 import ContactSection2 from "../GeneralComponents/Contact/ContactSection2";
 import {useTranslations} from 'next-intl';
@@ -20,6 +22,7 @@ const Page = () => {
   const t = useTranslations('Rooms.Room1');
   const t2 = useTranslations('Rooms.Room2');
   const t3 = useTranslations('Rooms.Room3');
+  const t4 = useTranslations('Rooms.Room4');
 
   return (
     <div className="overflow-hidden flex flex-col items-center justify-center gap-[50px] lg:gap-[100px] bg-[#fbfbfb]">
@@ -55,6 +58,16 @@ const Page = () => {
         span={t3("area")}
         span2={t3("view")}
         link="/rooms/superiorroom" 
+      />
+      <RoomsSectionReverse
+       id="handicaproom"
+        img={imgHandicap}
+        img2={imgHandicap2}
+        header={t4("title")}
+        text={t4("text")}
+        span={t4("area")}
+        span2={t4("view")}
+        link="/rooms/handicaproom"
       />
 
       <RoomsParallaxSection />

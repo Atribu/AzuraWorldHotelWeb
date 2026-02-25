@@ -7,32 +7,26 @@ import SubRoomBanner from "../subroomComponent/components/SubRoomBanner";
 import SubroomCarousel from "../subroomComponent/components/SubroomCarousel";
 import RoomFeatures from "../subroomComponent/components/RoomFeatures";
 import BackgroundSection from "../subroomComponent/components/BackgroundSection";
-import RoomTour from "../subroomComponent/components/RoomTour";
+// import RoomTour from "../subroomComponent/components/RoomTour";
 import OtherOptions from "../subroomComponent/components/OtherOptions";
 import ContactSection2 from "../../GeneralComponents/Contact/ContactSection2";
 
 import options1 from "../deluxeroom/images/deluxe4.jpg";
 import options2 from "../superiorroom/images/fantasy4.jpg";
 
-import img1 from "../deluxeroom/images/deluxe1.jpg";
-import img2 from "../deluxeroom/images/deluxe2.jpg";
-import img3 from "../deluxeroom/images/deluxe3.jpg";
-import img4 from "../deluxeroom/images/deluxe4.jpg";
-import img5 from "../deluxeroom/images/deluxe5.webp";
-import img6 from "../deluxeroom/images/deluxe6.webp";
-import img7 from "../deluxeroom/images/deluxe7.webp";
-import img8 from "../deluxeroom/images/deluxe8.jpg";
-import img9 from "../deluxeroom/images/deluxe9.webp";
-
-// Not: img1..img9 ve options1..2 görsellerini mevcut import yapına göre korudum.
-// Eğer bu sayfaya özel görsellerin varsa aynı değişken adlarını o dosyalardan import et.
+import img1 from "./images/Oda4.webp";
+import img2 from "./images/Oda5.webp";
+import img3 from "./images/Oda7.webp";
+import img4 from "./images/Oda10.webp";
+import img5 from "./images/Oda13.webp";
+import img6 from "./images/Oda14.webp";
 const HandicapRoomPage = () => {
   // i18n namespace'leri HandicapRoom olarak değiştirildi
   const t  = useTranslations("HandicapRoom");
   const t2 = useTranslations("HandicapRoom.RoomFeatures");
   const t3 = useTranslations("HandicapRoom.BackgroundSection");
   const t4 = useTranslations("HandicapRoom.OtherOptions");
-  const t5 = useTranslations("HandicapRoom.RoomTour");
+  // const t5 = useTranslations("HandicapRoom.RoomTour");
 
   // Banner ve arka plan metinleri
   const subroomBannerText = [t("span1"), t("span2"), t("span3")];
@@ -57,7 +51,7 @@ const HandicapRoomPage = () => {
   ];
 
   // Galeri
-  const carouselImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+  const carouselImages = [img1, img2, img3, img4, img5, img6];
 
   // Diğer oda seçenekleri (örnek: Aile ve Fantasy odaları)
   const rooms = [
@@ -117,13 +111,15 @@ const HandicapRoomPage = () => {
         img={img3}
       />
 
-      {/* 360 turlar (linkler sende farklıysa değiştir) */}
+      {/*
+      360° Oda Turu bölümü geçici olarak yoruma alındı.
       <RoomTour
         span={t5("span")}
         header={t5("title")}
         text={t5("text")}
         link="https://kuula.co/share/collection/7brmW?logo=1&info=0&fs=1&vr=1&autorotate=0.22&autop=10&autopalt=1&thumbs=4&margin=2&alph"
       />
+      */}
 
 
       <OtherOptions rooms={rooms} />

@@ -57,9 +57,11 @@ const Beach5 = ({span,header,text,poolItems, showLink,links=[]}) => {
           <Image 
             src={pool.src} 
             alt={pool.title}
-            width={349} 
-            height={233}
-            className="object-cover w-full transition-opacity duration-300 group-hover:opacity-0"
+            width={pool.src.width}
+            height={pool.src.height}
+            quality={95}
+            sizes="(min-width: 1280px) 40vw, (min-width: 1024px) 45vw, (min-width: 768px) 50vw, 85vw"
+            className="object-cover w-full h-[280px] xl:h-[300px] transition-opacity duration-300 group-hover:opacity-0"
           />
           <div className="flex absolute inset-0 items-center justify-center gap-[30px] bg-cover bg-center top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-white font-jost text-[16px]" style={{ backgroundImage: `url(${pool.hoverSrc.src})` }}>
             <div className="absolute inset-0 bg-black/40 z-[1]"></div>
@@ -104,9 +106,11 @@ const Beach5 = ({span,header,text,poolItems, showLink,links=[]}) => {
           <Image 
             src={pool.src} 
             alt={pool.title}
-            width={349} 
-            height={233}
-            className="object-cover w-full transition-opacity duration-300 group-hover:opacity-0"
+            width={pool.src.width}
+            height={pool.src.height}
+            quality={95}
+            sizes="(min-width: 1280px) 26vw, (min-width: 1024px) 30vw, (min-width: 768px) 50vw, 85vw"
+            className="object-cover w-full h-[260px] xl:h-[280px] transition-opacity duration-300 group-hover:opacity-0"
           />
           <div className="flex absolute inset-0 items-center justify-center gap-[30px] bg-cover bg-center top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-white font-jost text-[16px]" style={{ backgroundImage: `url(${pool.hoverSrc.src})` }}>
             <div className="absolute inset-0 bg-black/40 z-[1]"></div>
@@ -157,8 +161,11 @@ const Beach5 = ({span,header,text,poolItems, showLink,links=[]}) => {
                   <Image
                     src={pool.src}
                     alt={pool.title}
-                    width={349}
-                    height={233}
+                    width={pool.src.width}
+                    height={pool.src.height}
+                    quality={95}
+                    sizes="(min-width: 1280px) 31vw, (min-width: 1024px) 50vw, (min-width: 768px) 50vw, 85vw"
+                    className="w-full h-[250px] md:h-[280px] object-cover"
                   />
                   <span className="text-[12px] font-medium leading-[14px] tracking-[0.48px] uppercase">
                     {pool.subtitle}

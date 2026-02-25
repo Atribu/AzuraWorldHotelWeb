@@ -63,6 +63,7 @@ const OtherOptions = ({rooms}) => {
                     alt={room.title}
                     width={room.img.width}
                     height={room.img.height}
+                    className="w-full h-[250px] md:h-[285px] lg:h-[320px] object-cover"
                   />
                   <span className="text-[12px] font-medium leading-[14px] tracking-[0.48px] uppercase">
                     {room.description}

@@ -225,7 +225,7 @@ export default function Header() {
 
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  isRoomsOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+                  isRoomsOpen ? "max-h-[240px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="mt-2 space-y-2 pl-4  border-white/30 font-jost">
@@ -252,6 +252,12 @@ export default function Header() {
                     className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
                   >
                     {t("fantasy")}
+                  </Link>
+                  <Link
+                    href="/rooms/handicaproom"
+                    className="block text-[14px] text-[#FBFBFB] leading-[29.639px] uppercase"
+                  >
+                    {t("handicap")}
                   </Link>
                 </div>
               </div>

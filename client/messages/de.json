@@ -160,6 +160,7 @@
     "buttonText1": "Deluxe Zimmer",
     "buttonText2": "Deluxe Familienzimmer",
     "buttonText3": "Superior Zimmer",
+    "buttonText4": "Barrierefreies Zimmer",
     "subtitle": "KOMFORTABLE UNTERKUNFT FÜR SIE UND IHRE FAMILIE",
     "title": "Azura World Hotel Zimmer",
     "text": "Das Azura World Hotel verfügt über insgesamt 188 Zimmer. Alle Zimmer sind mit TV, Tee-Kaffee-Set, Safe, Minibar, VRF-Klimaanlage, elektronischem Kartensystem und Wi-Fi ausgestattet. Die Bettwäsche wird alle 3 Tage gewechselt.",
@@ -184,6 +185,13 @@
       "text": "Superior Zimmer sind 25–40 m² groß. Maximale Belegung: 2 Erwachsene.",
       "area": "25–40 m²",
       "view": "Details: Pool- und Landblick",
+      "buttonText": "Entdecken"
+    },
+    "Room4": {
+      "title": "Barrierefreies Zimmer",
+      "text": "Für einen komfortablen Aufenthalt nach Barrierefreiheitsstandards konzipiert.",
+      "area": "Barrierefreies Design",
+      "view": "Details: Hindernisfreier Zugang",
       "buttonText": "Entdecken"
     },
     "Parallax": {
