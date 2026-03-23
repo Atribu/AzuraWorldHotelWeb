@@ -116,7 +116,7 @@ const GallerySection = () => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    let scrollSpeed = 2.5; // Daha yavaş kayma için 1px
+    let scrollSpeed = 2.5;
     let scrollInterval;
 
     const startScrolling = () => {
@@ -135,7 +135,9 @@ const GallerySection = () => {
 
     startScrolling();
 
-    return () => clearInterval(scrollInterval);
+    return () => {
+      clearInterval(scrollInterval);
+    };
   }, []);
 
   return (

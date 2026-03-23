@@ -13,6 +13,7 @@ export default function HomePage() {
         alt="Azura Deluxe World"
         fill
         priority
+        sizes="100vw"
         className="absolute inset-0 object-cover z-[30]"
       />
 

@@ -1,5 +1,5 @@
-"use client"
 import React from "react"
+import Image from "next/image"
 import GreenAndBlueFull from "./Images/Genel28.webp"
 import Link from "next/link"
 import {useTranslations} from 'next-intl';
@@ -37,12 +37,15 @@ export default function HomePage5() {
       </div>
 
       <div
-      className="relative w-full h-[246.39px] md:h-[335px] lg:h-[530px] 2xl:h-[68vh] 
-      bg-cover bg-center items-center justify-center"
-      style={{
-        backgroundImage: `url(${GreenAndBlueFull.src})`
-      }}
+      className="relative w-full h-[246.39px] md:h-[335px] lg:h-[530px] 2xl:h-[68vh] overflow-hidden items-center justify-center"
     >
+      <Image
+        src={GreenAndBlueFull}
+        alt={t("title")}
+        fill
+        sizes="100vw"
+        className="object-cover object-center"
+      />
       {/* 
         Gradyan sadece üst 150px'i kaplasın:
         absolute top-0 left-0 w-full h-[150px]

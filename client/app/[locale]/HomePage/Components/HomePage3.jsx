@@ -82,7 +82,8 @@ export default function HomePage3() {
               alt={img.title}
               width={0}
               height={0}
-              sizes="100vw"
+              quality={82}
+              sizes="(min-width: 768px) 50vw, 100vw"
               className="
                 w-full 
                 h-[44vh]

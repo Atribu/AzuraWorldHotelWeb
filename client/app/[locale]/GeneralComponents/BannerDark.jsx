@@ -1,8 +1,17 @@
 import React from 'react'
+import Image from 'next/image'
 
 const BannerDark = ({img,header,span,text}) => {
   return (
-    <div className='flex w-screen h-screen lg:min-h-screen items-center justify-center bg-center bg-cover relative' style={{ backgroundImage: `url(${img.src})` }}>
+    <div className='relative flex w-screen h-screen lg:min-h-screen items-center justify-center overflow-hidden'>
+        <Image
+          src={img}
+          alt={header || span || "Banner image"}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
         <div className='absolute bg-lagoBlack/40 inset-0 z-[1]'></div>
       <div className='flex flex-col w-[90%] lg:w-[50%] items-center justify-center text-center gap-[30px] lg:gap-[50px] text-white font-jost z-[50]'>
         <span className='text-[12px] md:text-[14px] font-medium leading-[14px] tracking-[0.6px] uppercase'>{span}</span>

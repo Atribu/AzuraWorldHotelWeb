@@ -1,9 +1,17 @@
 import React from 'react'
+import Image from 'next/image'
 
 const MainBannerSection = ({img}) => {
   return (
-    <div className='flex w-screen h-[68vh] bg-center bg-cover'  style={{ backgroundImage: `url(${img.src})` }} >
-      
+    <div className='relative flex w-screen h-[68vh] overflow-hidden'>
+      <Image
+        src={img}
+        alt="Entertainment banner"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
     </div>
   )
 }

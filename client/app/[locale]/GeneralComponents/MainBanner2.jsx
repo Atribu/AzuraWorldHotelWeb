@@ -1,8 +1,17 @@
 import React from 'react'
+import Image from 'next/image'
 
 const MainBanner2 = ({img, span, header}) => {
   return (
-    <div className='flex w-screen items-center justify-center min-h-[calc(70vh)] bg-center bg-cover relative' style={{ backgroundImage: `url(${img.src})` }} >
+    <div className='relative flex w-screen items-center justify-center min-h-[calc(70vh)] overflow-hidden'>
+      <Image
+        src={img}
+        alt={header || span || "Banner image"}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
       <div className='absolute inset-0 bg-black/40 z-[1]'></div>
       <div className='flex flex-col items-center justify-center w-[65%] text-center gap-[30px] lg:gap-[50px] text-white font-jost z-[20]'>
         <span className='text-[12px] md:text-[15px] font-medium uppercase tracking-[0.6px] leading-[14px]'>{span}</span>

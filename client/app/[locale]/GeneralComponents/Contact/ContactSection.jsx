@@ -17,25 +17,26 @@ const ContactSection = () => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    let scrollSpeed = 2.5; // Daha yavaş kayma için 1px
+    let scrollSpeed = 2.5;
     let scrollInterval;
 
     const startScrolling = () => {
       scrollInterval = setInterval(() => {
         scrollContainer.scrollTop += scrollSpeed;
 
-        // Eğer en sona geldiyse, biraz bekleyip başa dön
         if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
           setTimeout(() => {
-            scrollContainer.scrollTop = 0; // Baştan başlat (ani sıçrama yapmadan)
-          }, 500); // 0.5 saniye bekleyip baştan başlat
+            scrollContainer.scrollTop = 0;
+          }, 500);
         }
-      }, 40); // Daha smooth kayma için 30ms
+      }, 40);
     };
 
     startScrolling();
 
-    return () => clearInterval(scrollInterval); // Component unmount olursa temizle
+    return () => {
+      clearInterval(scrollInterval);
+    };
   }, []);
 
   return (

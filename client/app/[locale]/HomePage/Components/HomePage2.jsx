@@ -30,8 +30,22 @@ export default function HomePage2() {
             </div>
     
             <div className="flex w-[48.8%] items-end justify-end relative h-full">
-                <Image src={img2} alt="art" width={298} height={438} className="absolute -top-[25px] -left-[20px] z-10"/>
-                <Image src={img1} alt="art" width={310} height={449} className="z-50"/>
+                <Image
+                  src={img2}
+                  alt="art"
+                  width={298}
+                  height={438}
+                  sizes="(min-width: 1024px) 298px, 45vw"
+                  className="absolute -top-[25px] -left-[20px] z-10"
+                />
+                <Image
+                  src={img1}
+                  alt="art"
+                  width={310}
+                  height={449}
+                  sizes="(min-width: 1024px) 310px, 45vw"
+                  className="z-50"
+                />
             </div>
     
           </div>

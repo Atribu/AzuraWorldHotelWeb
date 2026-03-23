@@ -36,7 +36,7 @@ const DEFAULT_SLIDES = [
 ];
 
 // Tekil slayt bileşeni
-function Slide({ slide, marginClass }) {
+function Slide({ slide, marginClass, priority = false }) {
 
 
   return (
@@ -60,6 +60,9 @@ function Slide({ slide, marginClass }) {
         alt={slide.title}
         width={360}
         height={540}
+        priority={priority}
+        quality={82}
+        sizes="(min-width: 1024px) 360px, (min-width: 640px) 40vw, 60vw"
         className="w-full h-full object-cover"
       />
       <div className="absolute flex flex-col text-white left-1/2 -translate-x-1/2 -translate-y-[10%] items-center justify-center w-[80%] lg:w-[50%] text-center top-[10%] gap-[10px] lg:gap-[23px]">
@@ -122,11 +125,11 @@ export default function Slider2({ slides }) {
   return (
     <section className="relative w-full overflow-hidden ">
       <div ref={emblaRef} className="overflow-hidden w-full ml-[6.1%] md:ml-[4.3%] lg:w-[87.4%] lg:ml-[5.8%]">
-        <div className="flex lg:h-[540px] w-auto">
-          {slidesCombined.map((slide, index) => (
-            <Slide key={index} slide={slide} marginClass="mr-4" />
+          <div className="flex lg:h-[540px] w-auto">
+            {slidesCombined.map((slide, index) => (
+            <Slide key={index} slide={slide} marginClass="mr-4" priority={index < 2} />
           ))}         
-        </div>
+          </div>
         <div className="absolute top-1/2 left-6 transform -translate-y-1/2">
       <button
         className="p-1 bg-[#848383]/40 hidden lg:flex pointer-events-auto"
@@ -162,6 +165,5 @@ export default function Slider2({ slides }) {
     </section>
   );
 }
-
 
 

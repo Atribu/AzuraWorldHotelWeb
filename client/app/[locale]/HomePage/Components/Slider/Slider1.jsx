@@ -26,7 +26,7 @@ function Slide({ slide, marginClass, priority = false }) {
         alt={slide.title}
         fill
         priority={priority}
-        quality={100}
+        quality={82}
         sizes="(min-width: 1024px) 360px, (min-width: 768px) 270px, 177px"
         className="
           object-cover object-center
