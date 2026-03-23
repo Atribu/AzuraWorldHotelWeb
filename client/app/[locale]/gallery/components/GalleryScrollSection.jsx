@@ -240,18 +240,21 @@ const GalleryScrollSection = () => {
         {/* Modal (Lightbox) */}
         {modalImage && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 px-2 py-3 md:px-4"
             onClick={() => setModalImage(null)}
           >
-            <div className="relative w-[35%]" onClick={(e) => e.stopPropagation()}>
+            <div
+              className="relative flex w-[98vw] items-center justify-center md:w-[94vw] lg:w-[90vw] xl:w-[88vw] max-w-[2000px]"
+              onClick={(e) => e.stopPropagation()}
+            >
               <Image
                 src={modalImage}
                 alt="Enlarged gallery"
-                className="w-full h-auto object-contain max-h-[720px]"
+                className="h-auto max-h-[94vh] w-full object-contain"
               />
 
               <button
-                className="absolute left-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 hover:bg-opacity-75 text-white"
+                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 text-white hover:bg-opacity-75 md:left-4"
                 onClick={scrollPrev}
                 aria-label="Previous"
               >
@@ -259,7 +262,7 @@ const GalleryScrollSection = () => {
               </button>
 
               <button
-                className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 hover:bg-opacity-75 text-white"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 text-white hover:bg-opacity-75 md:right-4"
                 onClick={scrollNext}
                 aria-label="Next"
               >
