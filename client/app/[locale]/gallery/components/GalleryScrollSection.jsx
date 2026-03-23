@@ -171,9 +171,9 @@ const GalleryScrollSection = () => {
 
   const categories = Object.keys(imageCategories)
   const [selectedCategory, setSelectedCategory] = useState(categories[0])
-
   const [modalIndex, setModalIndex] = useState(null)
   const [modalImage, setModalImage] = useState(null)
+  const selectedImages = imageCategories[selectedCategory]
 
   const openModal = (img, index) => {
     setModalImage(img)
@@ -181,14 +181,14 @@ const GalleryScrollSection = () => {
   }
 
   const scrollPrev = () => {
-    const images = imageCategories[selectedCategory]
+    const images = selectedImages
     const newIndex = modalIndex === 0 ? images.length - 1 : modalIndex - 1
     setModalIndex(newIndex)
     setModalImage(images[newIndex])
   }
 
   const scrollNext = () => {
-    const images = imageCategories[selectedCategory]
+    const images = selectedImages
     const newIndex = modalIndex === images.length - 1 ? 0 : modalIndex + 1
     setModalIndex(newIndex)
     setModalImage(images[newIndex])
@@ -229,13 +229,19 @@ const GalleryScrollSection = () => {
         <div className="flex lg:w-[1006px] h-[500px] md:h-[1000px] lg:h-[1700px]">
           <div className="flex flex-col w-full overflow-auto hover:overflow-scroll custom-scroll h-auto">
             <div className="columns-2 lg:columns-3 gap-[16px] lg:gap-[0px] transition-all duration-[350ms] ease-in-out cursor-pointer">
-              {imageCategories[selectedCategory].map((imgSrc, index) => (
+              {selectedImages.map((imgSrc, index) => (
                 <div
                   className="mb-[19.16px] transition-all duration-[350ms] ease-in-out cursor-pointer"
                   key={index}
                   onClick={() => openModal(imgSrc, index)}
                 >
-                  <Image src={imgSrc} alt="gallery" className="lg:w-[322px] h-full" />
+                  <Image
+                    src={imgSrc}
+                    alt="gallery"
+                    className="h-auto w-full lg:w-[322px]"
+                    sizes="(min-width: 1280px) 322px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                    quality={72}
+                  />
                 </div>
               ))}
             </div>
@@ -256,6 +262,9 @@ const GalleryScrollSection = () => {
                 src={modalImage}
                 alt="Enlarged gallery"
                 className="h-auto max-h-[94vh] w-full object-contain"
+                sizes="(min-width: 1280px) 88vw, (min-width: 1024px) 90vw, (min-width: 768px) 94vw, 98vw"
+                quality={84}
+                priority
               />
 
               <button
