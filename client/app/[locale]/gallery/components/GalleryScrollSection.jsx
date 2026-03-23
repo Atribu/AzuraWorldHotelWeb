@@ -21,7 +21,7 @@ import img14 from "../images/Genel13.webp"
 import img15 from "../images/Genel14.webp"
 import img16 from "../images/Genel15.webp"
 import img17 from "../images/Genel16.webp"
-import img18 from "../images/Genel17.webp"
+// import img18 from "../images/Genel17.webp"
 import img19 from "../images/Genel18.webp"
 import img20 from "../images/Genel20.webp"
 import img21 from "../images/Genel21.webp"
@@ -133,17 +133,19 @@ const GalleryScrollSection = () => {
   // Kategorilere göre resimler
   const imageCategories = {
     [t("general")]: [
-      img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-      img11, img12, img13, img14, img15, img16, img17, img18, img19,
-      img20, img21, img22, img23, img24, img25, img26, img27, img28, img29,
+      // Dikey genel gorseller gecici olarak kapatildi:
+      // img1, img2, img3, img5, img6, img11, img13, img14, img17, img18, img19, img22, img24, img25,
+      img4, img7, img8, img9, img10, img12, img15, img16,
+      img20, img21, img23, img26, img27, img28, img29,
     ],
     [t("rooms")]: [
       img45, img46, img47, img48, img49, img50, img51, img52, img53, img54,
       img55, img56, img57, img58,
     ],
     [t("flavours")]: [
-      img30, img31, img32, img33, img34, img35, img36, img37,
-      img39, img40, img41, img42, img43, img44,
+      // Dikey lezzet gorselleri gecici olarak kapatildi: img37, img43
+      img30, img31, img32, img33, img34, img35, img36,
+      img39, img40, img41, img42, img44,
     ],
     [t("bar")]: [img59, img60, img61, img62, img63, img64, img65, img66],
     [t("pool")]: [
@@ -161,7 +163,10 @@ const GalleryScrollSection = () => {
       img93, img94, img95, img96, img97, img98, img99, img100, img101, img102, img103, img104, img105, img106, img107, img108,
       img67, img68, img70,
     ],
-    [t("meeting")]: [img109, img110, img111, img112, img113, img114,],
+    [t("meeting")]: [
+      // Dikey toplanti gorseli gecici olarak kapatildi: img111
+      img109, img110, img112, img113, img114,
+    ],
   }
 
   const categories = Object.keys(imageCategories)
