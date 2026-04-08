@@ -141,8 +141,8 @@ export default function Footer() {
                 {t("phoneNumber")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902425171234" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 517 12 34
+                <a href="tel:+902425288888" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                +90 242 528 88 88
                 </a>
               </div>
             </div>
@@ -267,8 +267,8 @@ export default function Footer() {
                  {t("phoneNumber")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902425171234" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 517 12 34
+                <a href="tel:+902425288888" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                +90 242 528 88 88
                 </a>
               </div>
             </div>

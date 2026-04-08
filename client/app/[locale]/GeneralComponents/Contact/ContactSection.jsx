@@ -55,7 +55,7 @@ const ContactSection = () => {
           Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="capsizedText4 lg:hidden">
-            {t("phoneColon")} <Link href="tel:+902425171234" className="underline z-[99] ">+90 242 517 12 34</Link>
+            {t("phoneColon")} <Link href="tel:+902425288888" className="underline z-[99] ">+90 242 528 88 88</Link>
           </span>
           <span className="capsizedText4 lg:hidden">
           {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>
@@ -69,7 +69,7 @@ const ContactSection = () => {
           Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
           <span className="hidden lg:block">
-          {t("phoneColon")} <Link href="tel:+902425171234" className="underline z-[99] ">+90 242 517 12 34</Link>
+          {t("phoneColon")} <Link href="tel:+902425288888" className="underline z-[99] ">+90 242 528 88 88</Link>
           </span>
           <span className="hidden lg:block">
           {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>

@@ -30,8 +30,8 @@ const ContactDetails = () => {
           </span>
           <span className="capsizedText4 lg:hidden">
           {t("phoneColon")}{" "}
-            <Link href="tel:+902425171234" className="underline">
-            +90 242 517 12 34
+            <Link href="tel:+902425288888" className="underline">
+            +90 242 528 88 88
             </Link>
           </span>
           <span className="capsizedText4 lg:hidden">
@@ -53,8 +53,8 @@ const ContactDetails = () => {
           </span>
           <span className="hidden lg:block">
           {t("phoneColon")}{" "}
-            <Link href="" className="underline">
-            +90 242 517 12 34
+            <Link href="tel:+902425288888" className="underline">
+            +90 242 528 88 88
             </Link>
           </span>
           <span className="hidden lg:block">

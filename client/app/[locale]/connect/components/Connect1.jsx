@@ -63,7 +63,7 @@ const Page = () => {
         
         <ContactColumn icon={<FiPhone size={22} className='mt-1' color='#1D1D1B'/>} title={t("phoneNumber")}>
          <span className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F]'>
-         +90 242 517 12 34<br />+90 242 277 11 43
+         +90 242 528 88 88<br />+90 242 277 11 43
          </span>
         </ContactColumn>
         
