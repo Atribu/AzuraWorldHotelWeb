@@ -22,6 +22,9 @@ export default function Footer() {
   const t = useTranslations('Footer');
   const [isRoomsOpen, setIsRoomsOpen] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const tourismCertificateNumber = "25223";
+  const tourismCertificateUrl =
+    "https://www.ktb.gov.tr/genel/searchhotelgenel.aspx?lang=tr";
 
   return (
     <footer className="w-full flex flex-col bg-[#1A1A16] text-gray-200 text-sm justify-center items-center z-10">
@@ -471,8 +474,18 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Alt ince çizgi */}
-      <div className="md:flex hidden w-full h-[1px] bg-gray-400 mt-[60px]" />
+      <div className="w-full px-4 md:px-8 mt-[40px] md:mt-[60px] pb-[28px] md:pb-[36px]">
+        <div className="mx-auto flex w-full max-w-[1440px] items-center justify-center border-y border-white/15 py-[18px] md:py-[22px]">
+          <a
+            href={tourismCertificateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center font-jost text-[12px] leading-[20px] tracking-[0.2px] text-[#A6A6A6] transition-colors duration-300 hover:text-white md:text-[15px] md:leading-[24px]"
+          >
+            {t("tourismCertificate")}: {tourismCertificateNumber}
+          </a>
+        </div>
+      </div>
       {/* <Link href="https://dgtlface.com"   rel="norefferer nofollower"
                   target="_blank" className="flex w-full text-[14px] font-normal leading-normal font-jost tracking-[0.56px] mb-2 pb-[80px] md:py-[1.8%] text-center justify-center items-center gap-[9.13px] text-[#A6A6A6]">
             Powered by <DgtlfaceSvg className="flex" width={104} height={27} />
