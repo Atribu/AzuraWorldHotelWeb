@@ -464,9 +464,9 @@
     "BeachCarousel": {
       "subtitle": "SONNE & VERGNÜGEN AM MEER",
       "title": "Azura Beach",
-      "text": "Der Snack- und Getränkeservice am Azura Beach wird zwischen 12:30 und 16:30 Uhr angeboten.",
-      "title1": "Snacks & Getränke",
-      "span1": "12:30 – 16:00",
+      "text": "Am Azura Beach wird Strandservice zwischen 10:00 und 17:00 Uhr angeboten.",
+      "title1": "Strandservice",
+      "span1": "10:00 – 17:00",
       "title2": "Strandeinrichtungen",
       "span2": "Kabine / WC / Dusche",
       "title3": "Liegen & Schirme",
@@ -535,18 +535,18 @@
       "text": "Entdecken Sie die besten Beispiele internationaler Küchen am Milos Buffet.",
       "span": "Essenszeiten:",
       "list1": "Frühstück: 07:00 - 10:00",
-      "list2": "Spätaufsteher-Frühstück: 10:00 - 11:00",
-      "list3": "Mittagessen: 12:30 - 14:30",
+      "list2": "Spätaufsteher-Frühstück: 10:00 - 10:30",
+      "list3": "Mittagessen: 12:30 - 14:00",
       "list4": "Abendessen: 19:00 - 21:00",
       "buttonText": "MEHR ENTDECKEN"
     },
     "CarouselSection": {
       "subtitle": "Option mit Reservierung",
       "title": "Saffron A’la Carte",
-      "text": "Bei einem Aufenthalt von 7 Nächten oder mehr ist eine Nutzung kostenlos inkludiert.",
+      "text": "Bei Aufenthalten ab 7 Nächten ist 1 Nutzung kostenlos.",
       "subtitle1": "Exklusiver Service",
       "title1": "Saffron A’la Carte",
-      "text1": "Servicezeiten: 18:30 – 23:00 (mit Reservierung).",
+      "text1": "Servicezeiten: 19:00 – 21:00 mit Reservierung.",
       "span1": "Öffnungszeiten: 19:00 – 21:00",
       "subtitle2": "",
       "title2": "",
@@ -572,26 +572,26 @@
       "title1": "Patisserie Art",
       "text1": "Service: 11:00 – 18:00.",
       "span1": "Öffnungszeiten: 11:00 – 18:00",
-      "subtitle2": "NUTZUNGSBEREICH",
+      "subtitle2": "LOBBYBEREICH",
       "title2": "Lobby Bar",
       "text2": "Unsere Lobbybar ist von 10:00 bis 01:00 Uhr geöffnet, und der kostenlose Alkoholausschank erfolgt innerhalb dieser Zeiten.",
       "span2": "Servicezeiten: 10:00 – 01:00",
       "subtitle3": "STRANDBEREICH",
-      "title3": "Azura Beach Snack",
-      "text3": "Snack-Service: 12:30 – 16:30.",
-      "span3": "Öffnungszeiten: 10:00 – 18:00"
+      "title3": "Strandservice",
+      "text3": "Strandservice: 10:00 – 17:00.",
+      "span3": "Öffnungszeiten: 10:00 – 17:00"
     },
     "BackgroundSection2": {
       "subtitle": "ERFRISCHENDE GETRÄNKE",
       "title": "Entdecken Sie unsere Bars",
-      "text": "Genießen Sie Ihren Urlaub mit Drinks an der Pool Bar und Lobby Bar.",
+      "text": "Genießen Sie Ihren Urlaub mit Getränken an der Oasis Pool Bar, Lobby Bar, Flamingo Bar und am Strandservice.",
       "buttonText": "MEHR ENTDECKEN"
     }
   },
   "Bars": {
     "subtitle": "EXKLUSIVE GETRÄNKEERLEBNISSE",
     "title": "Bars",
-    "text": "Die Oasis Pool Bar ist von 10:00–00:00 Uhr und die Lobby Bar für Ihren Service geöffnet.",
+    "text": "Die Oasis Pool Bar ist von 10:00–22:00 Uhr, die Lobby Bar von 10:00–01:00 Uhr, die Flamingo Bar von 10:00–16:30 extra und der Strandservice von 10:00–17:00 Uhr verfügbar.",
     "TwoImageSection": {
       "subtitle": "Perfekte Getränkeerlebnisse",
       "title": "Getränke-Servicebereiche",
@@ -600,7 +600,7 @@
     "BackgroundSection": {
       "subtitle": "EIN EINZIGARTIGES GENUSSFEST",
       "title": "Abkühlen und Entspannen",
-      "text": "An der Pool Bar erhalten Sie den ganzen Tag Getränke; in der Lobby Bar können Sie entspannt verweilen.",
+      "text": "Genießen Sie tagsüber Getränke an der Oasis Pool Bar, Lobby Bar, Flamingo Bar und am Strandservice.",
       "buttonText": "MEHR ENTDECKEN"
     },
     "Carousel": {
@@ -610,15 +610,15 @@
       "subtitle1": "Lobbybereich (Service: 10:00–01:00)",
       "title1": "Lobby Bar",
       "text1": "Gemütlicher Loungebereich; kostenloser Alkoholausschank bis 01:00 Uhr.",
-      "subtitle2": "Service: 10:00–00:00",
+      "subtitle2": "Service: 10:00–22:00",
       "title2": "Oasis Pool Bar",
       "text2": "Erfrischende Cocktails und Drinks direkt am Pool.",
-      "subtitle3": "Service: 10:00–18:00 (Gegen Gebühr)",
-      "title3": "Flamingo Bar Aquapark",
-      "text3": "Runden Sie Ihren Aquapark-Spaß mit Getränken ab (Gegen Gebühr).",
-      "subtitle4": "Service: 10:00–18:00",
-      "title4": "Beach Bar",
-      "text4": "Erfrischende Getränke direkt am Strand.",
+      "subtitle3": "Service: 10:00–16:30 extra",
+      "title3": "Flamingo Bar",
+      "text3": "Runden Sie Ihren Aquapark-Spaß mit Getränken ab (extra).",
+      "subtitle4": "Service: 10:00–17:00",
+      "title4": "Strandservice",
+      "text4": "Im Strandbereich wird Getränkeservice angeboten.",
       "buttonText": "MEHR ENTDECKEN"
     },
     "BackgroundSection2": {
