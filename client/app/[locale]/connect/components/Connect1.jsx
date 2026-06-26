@@ -8,8 +8,8 @@ import {useTranslations} from 'next-intl';
 
 // İletişim sütunu bileşeni: ikon, başlık ve açıklama alanını içerir.
 const ContactColumn = ({ icon, title, children, className = "" }) => (
-  <div className={`flex min-h-[200px] flex-col justify-center gap-[18px] px-[28px] py-[28px] lg:min-h-[220px] lg:px-[38px] lg:py-[34px] ${className}`}>
-    <div className='flex items-center gap-[14px]'>
+  <div className={`flex min-h-[200px] flex-col justify-start gap-[18px] px-[28px] py-[28px] lg:min-h-[220px] lg:px-[38px] lg:py-[34px] ${className}`}>
+    <div className='flex items-center gap-[14px] lg:min-h-[62px]'>
       {icon}
       <h4 className='text-lagoBlack font-marcellus text-[21px] lg:text-[23px] leading-[28px] lg:leading-[31px] capitalize font-normal'>
         {title}
@@ -50,7 +50,7 @@ const Page = () => {
         </div>
       </div>
       
-      <div className='mt-[90px] w-[87.79%] md:w-[91.4%] lg:w-[76.8%] xl:w-[1106px] overflow-hidden rounded-[24px] border border-[#1D1D1B]/10 bg-[#FFFEFC] shadow-[0_18px_60px_rgba(0,0,0,0.07)]'>
+      <div className='mt-[90px] w-[90%] max-w-[1240px] md:w-[92%] lg:w-[84%] overflow-hidden bg-[#FFFEFC]'>
         <div className='grid grid-cols-1 lg:grid-cols-[1.05fr_1fr_1.05fr]'>
           <ContactColumn
             icon={<CiLocationOn size={26} color='#1D1D1B'/>}
