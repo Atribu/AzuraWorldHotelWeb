@@ -2,26 +2,21 @@ import React from 'react'
 import Image from "next/image"
 import image1 from "../Image/contact2.jpg"
 import { CiLocationOn } from "react-icons/ci";
-import { FiPhone } from "react-icons/fi";
+import { FiMail, FiPhone } from "react-icons/fi";
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 
-// Divider bileşeni: md ve üzeri ekranlarda görünür, responsive negatif margin ile sola kayar.
-const Divider = () => (
-  <div className='hidden lg:flex items-center justify-start'>
-    <div className='bg-lagoBlack w-[1px] h-[90px] ' />
-  </div>
-);
-
 // İletişim sütunu bileşeni: ikon, başlık ve açıklama alanını içerir.
-const ContactColumn = ({ icon, title, children }) => (
-  <div className='flex items-start justify-start gap-[17px] '>
-    <div className='flex'>
+const ContactColumn = ({ icon, title, children, className = "" }) => (
+  <div className={`flex min-h-[200px] flex-col justify-center gap-[18px] px-[28px] py-[28px] lg:min-h-[220px] lg:px-[38px] lg:py-[34px] ${className}`}>
+    <div className='flex items-center gap-[14px]'>
       {icon}
+      <h4 className='text-lagoBlack font-marcellus text-[21px] lg:text-[23px] leading-[28px] lg:leading-[31px] capitalize font-normal'>
+        {title}
+      </h4>
     </div>
-    <div className='flex flex-col items-start justify-start text-start gap-[10px] lg:gap-[17px]'>
-      <h4 className='text-lagoBlack font-marcellus text-[22px] lg:text-[24px] leading-[28px] lg:leading-[32px] capitalize font-normal'>{title}</h4>
-      <div className='text-lagoGray font-jost text-[18px] font-normal leading-[26px] tracking-[0.72px]'>{children}</div>
+    <div className='max-w-[300px] text-lagoGray font-jost text-[17px] lg:text-[18px] font-normal leading-[30px] tracking-[0.48px]'>
+      {children}
     </div>
   </div>
 );
@@ -55,42 +50,60 @@ const Page = () => {
         </div>
       </div>
       
-      {/* İletişim bilgileri: Özel grid yapısı */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_auto_1fr_auto_1fr] justify-start items-start w-[87.79%] md:w-[91.4%] lg:w-[76.8%] lg:min-w-[976px] xl:w-[1106px] gap-[30px] md:gap-[50px] xl:gap-[79px] mt-[100px]'>
-        
-        <ContactColumn icon={<CiLocationOn size={28} color='#1D1D1B'/>} title={t("ourAddress")}>
-       <Link href="https://maps.app.goo.gl/usJ9fRr3Po35C3bw8" className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F] whitespace-nowrap'   rel="norefferer nofollower"
-                  target="_blank">Türkler Mah. Kargı Çayı Cad. <br/>No:10 Alanya / Turkey</Link>
-        </ContactColumn>
-        
-        <Divider />
-        
-        <ContactColumn icon={<FiPhone size={22} className='mt-1' color='#1D1D1B'/>} title={t("phoneNumbers")}>
-         <div className='flex flex-col gap-[14px] text-[#4B4E4F]'>
-          <div className='flex flex-col gap-[4px]'>
-            <span className='text-[11px] lg:text-[12px] uppercase tracking-[0.88px] text-[#8A8D8E]'>
-              {t("reservationLabel")}
-            </span>
-            <Link href={reservationPhoneHref} className='text-[16px] lg:text-[18px] leading-normal lg:leading-[26px] whitespace-nowrap underline'>
-              {reservationPhoneLabel}
+      <div className='mt-[90px] w-[87.79%] md:w-[91.4%] lg:w-[76.8%] xl:w-[1106px] overflow-hidden rounded-[24px] border border-[#1D1D1B]/10 bg-[#FFFEFC] shadow-[0_18px_60px_rgba(0,0,0,0.07)]'>
+        <div className='grid grid-cols-1 lg:grid-cols-[1.05fr_1fr_1.05fr]'>
+          <ContactColumn
+            icon={<CiLocationOn size={26} color='#1D1D1B'/>}
+            title={t("ourAddress")}
+            className="border-b border-[#1D1D1B]/10 lg:border-b-0 lg:border-r"
+          >
+            <Link
+              href="https://maps.app.goo.gl/usJ9fRr3Po35C3bw8"
+              className='inline-flex max-w-[280px] text-[#4B4E4F] transition-colors duration-300 hover:text-lagoBlack'
+              rel="noreferrer nofollow"
+              target="_blank"
+            >
+              Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
             </Link>
-          </div>
-          <div className='flex flex-col gap-[4px]'>
-            <span className='text-[11px] lg:text-[12px] uppercase tracking-[0.88px] text-[#8A8D8E]'>
-              {t("receptionLabel")}
-            </span>
-            <Link href={receptionPhoneHref} className='text-[16px] lg:text-[18px] leading-normal lg:leading-[26px] whitespace-nowrap underline'>
-              {receptionPhoneLabel}
+          </ContactColumn>
+
+          <ContactColumn
+            icon={<FiPhone size={22} color='#1D1D1B'/>}
+            title={t("phoneNumbers")}
+            className="border-b border-[#1D1D1B]/10 lg:border-b-0 lg:border-r"
+          >
+            <div className='flex max-w-[280px] flex-col gap-[18px] text-[#4B4E4F]'>
+              <div className='flex flex-col gap-[4px]'>
+                <span className='text-[11px] lg:text-[12px] uppercase tracking-[1.2px] text-[#8A8D8E]'>
+                  {t("reservationLabel")}
+                </span>
+                <Link href={reservationPhoneHref} className='text-[17px] lg:text-[18px] leading-[28px] whitespace-nowrap underline decoration-[#1D1D1B]/35 underline-offset-[5px] transition-colors duration-300 hover:text-lagoBlack'>
+                  {reservationPhoneLabel}
+                </Link>
+              </div>
+              <div className='flex flex-col gap-[4px]'>
+                <span className='text-[11px] lg:text-[12px] uppercase tracking-[1.2px] text-[#8A8D8E]'>
+                  {t("receptionLabel")}
+                </span>
+                <Link href={receptionPhoneHref} className='text-[17px] lg:text-[18px] leading-[28px] whitespace-nowrap underline decoration-[#1D1D1B]/35 underline-offset-[5px] transition-colors duration-300 hover:text-lagoBlack'>
+                  {receptionPhoneLabel}
+                </Link>
+              </div>
+            </div>
+          </ContactColumn>
+
+          <ContactColumn
+            icon={<FiMail size={22} color='#1D1D1B'/>}
+            title={t("emailAddress")}
+          >
+            <Link
+              href="mailto:info@azuraworldhotel.com"
+              className='inline-flex max-w-[280px] break-all text-[#4B4E4F] underline decoration-[#1D1D1B]/25 underline-offset-[5px] transition-colors duration-300 hover:text-lagoBlack'
+            >
+              info@azuraworldhotel.com
             </Link>
-          </div>
-         </div>
-        </ContactColumn>
-        
-        <Divider />
-        
-        <ContactColumn icon={<CiLocationOn size={28} color='#1D1D1B'/>} title={t("emailAddress")}>
-         <span className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F]'> info@azuraworldhotel.com</span>
-        </ContactColumn>
+          </ContactColumn>
+        </div>
       </div>
     </div>
   )
