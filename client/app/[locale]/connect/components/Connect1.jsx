@@ -20,14 +20,18 @@ const ContactColumn = ({ icon, title, children }) => (
       {icon}
     </div>
     <div className='flex flex-col items-start justify-start text-start gap-[10px] lg:gap-[17px]'>
-      <h4 className='text-lagoBlack font-marcellus text-[22px] lg:text-[24px] leading-[32px] capitalize font-normal'>{title}</h4>
-      <p className='text-lagoGray font-jost text-[18px] font-normal leading-[26px] tracking-[0.72px] underline'>{children}</p>
+      <h4 className='text-lagoBlack font-marcellus text-[22px] lg:text-[24px] leading-[28px] lg:leading-[32px] capitalize font-normal'>{title}</h4>
+      <div className='text-lagoGray font-jost text-[18px] font-normal leading-[26px] tracking-[0.72px]'>{children}</div>
     </div>
   </div>
 );
 
 const Page = () => {
   const t = useTranslations('ContactPage');
+  const reservationPhoneHref = "tel:+902422121741";
+  const reservationPhoneLabel = "0242 212 17 41";
+  const receptionPhoneHref = "tel:+902425288888";
+  const receptionPhoneLabel = "0242 528 88 88";
 
   return (
     <div className='flex flex-col justify-center items-center mb-[4%] w-screen'>
@@ -61,10 +65,25 @@ const Page = () => {
         
         <Divider />
         
-        <ContactColumn icon={<FiPhone size={22} className='mt-1' color='#1D1D1B'/>} title={t("phoneNumber")}>
-         <span className='text-[16px] lg:text-[18px] font-normal leading-normal lg:leading-[26px] tracking-[0.72px] text-[#4B4E4F]'>
-         +90 242 528 88 88<br />+90 242 277 11 43
-         </span>
+        <ContactColumn icon={<FiPhone size={22} className='mt-1' color='#1D1D1B'/>} title={t("phoneNumbers")}>
+         <div className='flex flex-col gap-[14px] text-[#4B4E4F]'>
+          <div className='flex flex-col gap-[4px]'>
+            <span className='text-[11px] lg:text-[12px] uppercase tracking-[0.88px] text-[#8A8D8E]'>
+              {t("reservationLabel")}
+            </span>
+            <Link href={reservationPhoneHref} className='text-[16px] lg:text-[18px] leading-normal lg:leading-[26px] whitespace-nowrap underline'>
+              {reservationPhoneLabel}
+            </Link>
+          </div>
+          <div className='flex flex-col gap-[4px]'>
+            <span className='text-[11px] lg:text-[12px] uppercase tracking-[0.88px] text-[#8A8D8E]'>
+              {t("receptionLabel")}
+            </span>
+            <Link href={receptionPhoneHref} className='text-[16px] lg:text-[18px] leading-normal lg:leading-[26px] whitespace-nowrap underline'>
+              {receptionPhoneLabel}
+            </Link>
+          </div>
+         </div>
         </ContactColumn>
         
         <Divider />

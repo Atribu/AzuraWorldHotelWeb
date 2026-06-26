@@ -283,7 +283,7 @@ export default function HeaderWhite() {
           <div className="ml-2 px-4 w-full lg:max-w-[392px] flex flex-col items-center font-jost">
             <div className="flex items-center justify-center gap-[15px] text-lagoBlack">
               <Phone className="flex" width={18} height={18} color="#1D1D1B" />
-              <span className="text-[15px] font-normal leading-[24px]">+90 242 277 11 43</span>
+              <span className="text-[15px] font-normal leading-[24px]">0242 212 17 41</span>
             </div>
 
             <button

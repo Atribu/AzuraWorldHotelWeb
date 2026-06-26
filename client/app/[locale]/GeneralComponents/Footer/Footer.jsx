@@ -22,6 +22,10 @@ export default function Footer() {
   const t = useTranslations('Footer');
   const [isRoomsOpen, setIsRoomsOpen] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const reservationPhoneHref = "tel:+902422121741";
+  const reservationPhoneLabel = "0242 212 17 41";
+  const receptionPhoneHref = "tel:+902425288888";
+  const receptionPhoneLabel = "0242 528 88 88";
   const tourismCertificateNumber = "25223";
   const tourismCertificateUrl =
     "https://www.ktb.gov.tr/genel/searchhotelgenel.aspx?lang=tr";
@@ -36,9 +40,24 @@ export default function Footer() {
                 <Link href="/connect">{t("contact")}</Link>
               </h4>
               <div className="flex flex-col gap-[24px]">
-                <p className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px] ">
-                {t("phone")}
-                </p>
+                <div className="flex flex-col gap-[14px] text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
+                  <div className="flex flex-col gap-[4px]">
+                    <span className="text-[11px] uppercase tracking-[0.72px] text-lagoGray2/70">
+                      {t("reservationLabel")}
+                    </span>
+                    <a href={reservationPhoneHref} className="whitespace-nowrap">
+                      {reservationPhoneLabel}
+                    </a>
+                  </div>
+                  <div className="flex flex-col gap-[4px]">
+                    <span className="text-[11px] uppercase tracking-[0.72px] text-lagoGray2/70">
+                      {t("receptionLabel")}
+                    </span>
+                    <a href={receptionPhoneHref} className="whitespace-nowrap">
+                      {receptionPhoneLabel}
+                    </a>
+                  </div>
+                </div>
                 <a href="mailto:info@azuraworldhotel.com" className="text-lagoGray2 font-jost text-[16px] font-normal leading-[20px]">
                 {t("emailAddress")} info@azuraworldhotel.com
                 </a>
@@ -141,11 +160,11 @@ export default function Footer() {
               <Phone className="flex" width={25} height={25} color="#A6A6A6" />
               <div className="flex flex-col gap-[10px] items-start justify-start">
                 <span className="text-[#A6A6A6] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                {t("phoneNumber")}
+                {t("reservationLabel")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902425288888" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 528 88 88
+                <a href={reservationPhoneHref} className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                {reservationPhoneLabel}
                 </a>
               </div>
             </div>
@@ -154,11 +173,11 @@ export default function Footer() {
               <Phone className="flex" width={25} height={25} color="#A6A6A6" />
               <div className="flex flex-col gap-[10px] items-start justify-start">
                 <span className="text-[#A6A6A6] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                 {t("callCenter")}
+                 {t("receptionLabel")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902422771143" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 277 11 43
+                <a href={receptionPhoneHref} className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                {receptionPhoneLabel}
                 </a>
               </div>
             </div>
@@ -267,11 +286,11 @@ export default function Footer() {
               <Phone className="flex" width={25} height={25} color="#A6A6A6" />
               <div className="flex flex-col gap-[10px] items-start justify-start">
                 <span className="text-[#A6A6A6] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                 {t("phoneNumber")}
+                 {t("reservationLabel")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902425288888" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 528 88 88
+                <a href={reservationPhoneHref} className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                {reservationPhoneLabel}
                 </a>
               </div>
             </div>
@@ -280,11 +299,11 @@ export default function Footer() {
               <Phone className="flex" width={25} height={25} color="#A6A6A6" />
               <div className="flex flex-col gap-[10px] items-start justify-start">
                 <span className="text-[#A6A6A6] leading-[32.53px] capsizedText6 tracking-[0.3px]">
-                {t("callCenter")}
+                {t("receptionLabel")}
                 </span>
                 <div className="flex h-[1px] w-full bg-[#D9D9D9]/50"></div>
-                <a href="tel:+902422771143" className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
-                +90 242 277 11 43
+                <a href={receptionPhoneHref} className="text-[#FBFBFB] leading-[32.53px] capsizedText6">
+                {receptionPhoneLabel}
                 </a>
               </div>
             </div>

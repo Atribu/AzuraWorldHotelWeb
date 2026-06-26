@@ -328,7 +328,7 @@ export default function Header() {
             <div className="flex items-center justify-center gap-[15px] text-white">
               <Phone className="flex" width={18} height={18} color="#ffffff" />
               <span className="text-[15px] font-normal leading-[24px]">
-                +90 242 277 11 43
+                0242 212 17 41
               </span>
             </div>
 

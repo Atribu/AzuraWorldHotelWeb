@@ -13,6 +13,10 @@ import {useTranslations} from 'next-intl';
 
 const ContactDetails = () => {
   const t = useTranslations('ContactPage');
+  const reservationPhoneHref = "tel:+902422121741";
+  const reservationPhoneLabel = "0242 212 17 41";
+  const receptionPhoneHref = "tel:+902425288888";
+  const receptionPhoneLabel = "0242 528 88 88";
 
   return (
     <div className="flex flex-col justify-center items-center w-full md:w-[35%] lg:w-[40%] md:pl-0">
@@ -23,53 +27,35 @@ const ContactDetails = () => {
         <h2 className="font-marcellus font-normal text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] 2xl:text-[44px] leading-[150%] lg:leading-[57.6px] capsizedText3 lg:capsizedText2">
           @azuraworldhotel
         </h2>
-        <p className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-2 ">
-          {/* Mobil görünüm (lg'den küçük) */}
-          <span className="capsizedText4 lg:hidden">
-          Türkle Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
-          </span>
-          <span className="capsizedText4 lg:hidden">
-          {t("phoneColon")}{" "}
-            <Link href="tel:+902425288888" className="underline">
-            +90 242 528 88 88
-            </Link>
-          </span>
-          <span className="capsizedText4 lg:hidden">
-          {t("callCenter")}:{" "}
-            <Link href="tel:+902422771143" className="underline">
-            +90 242 277 11 43
-            </Link>
-          </span>
-          <span className="capsizedText4 lg:hidden">
-          {t("emailAddress")}{" "}
-            <Link href="mailto:info@azuraworldhotel.com" className="underline">
-              info@azuraworldhotel.com
-            </Link>
-          </span>
-
-          {/* Desktop görünüm (lg ve üstü) */}
-          <span className="hidden lg:block">
+        <div className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-3">
+          <span className="capsizedText4">
             Türkle Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
           </span>
-          <span className="hidden lg:block">
-          {t("phoneColon")}{" "}
-            <Link href="tel:+902425288888" className="underline">
-            +90 242 528 88 88
+          <div className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+              {t("reservationLabel")}
+            </span>
+            <Link href={reservationPhoneHref} className="underline whitespace-nowrap">
+              {reservationPhoneLabel}
             </Link>
-          </span>
-          <span className="hidden lg:block">
-          {t("callCenter")}:{" "}
-            <Link href="" className="underline">
-            +90 242 277 11 43
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+              {t("receptionLabel")}
+            </span>
+            <Link href={receptionPhoneHref} className="underline whitespace-nowrap">
+              {receptionPhoneLabel}
             </Link>
-          </span>
-          <span className="hidden lg:block">
-            {t("emailAddress")}{" "}
-            <Link href="" className="underline">
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+              {t("emailAddress")}
+            </span>
+            <Link href="mailto:info@azuraworldhotel.com" className="underline break-all">
               info@azuraworldhotel.com
             </Link>
-          </span>
-        </p>
+          </div>
+        </div>
         <div className="flex gap-[20px] whitespace-nowrap">
           <div className="flex items-center justify-center gap-[18px]">
             <Link

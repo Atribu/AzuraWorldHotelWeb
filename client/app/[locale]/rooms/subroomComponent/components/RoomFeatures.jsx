@@ -403,7 +403,7 @@ const RoomFeatures = ({span, header, text, header2, header3, text2, iconsTexts, 
           <h4 className="text-[28px] font-marcellus font-normal text-lagoBlack leading-[120%] -tracking-[0.56px] leading-trim-both">{t("contactUs")}</h4>
           <div className="flex gap-[11px] items-center justify-center w-full">
             <DarkPhoneSvg className="flex" width={20} height={20} />
-          <a href="tel:+902425288888" className="text-[16px] text-lagoBlack font-medium font-jost leading-[120%] -tracking-[0.32px]">+90 242 528 88 88</a>
+          <a href="tel:+902422121741" className="text-[16px] text-lagoBlack font-medium font-jost leading-[120%] -tracking-[0.32px]">0242 212 17 41</a>
           </div>
         </div>
         </div>

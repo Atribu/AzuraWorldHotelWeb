@@ -23,7 +23,7 @@ const BookNow = () => {
           <CookieSvg className="flex" width={25} height={25} />
         </button>
 
-        <Link href="tel:+902422771143" className="flex items-center justify-center w-[45px] h-[38px] border border-white">
+        <Link href="tel:+902422121741" className="flex items-center justify-center w-[45px] h-[38px] border border-white">
           <PhoneSvg className="flex" width={25} height={25} color="white" />
         </Link>
 

@@ -10,6 +10,10 @@ import {useTranslations} from 'next-intl';
 
 const ContactSection = () => {
   const t = useTranslations('ContactPage');
+  const reservationPhoneHref = "tel:+902422121741";
+  const reservationPhoneLabel = "0242 212 17 41";
+  const receptionPhoneHref = "tel:+902425288888";
+  const receptionPhoneLabel = "0242 528 88 88";
 
   const scrollRef = useRef(null);
 
@@ -49,35 +53,35 @@ const ContactSection = () => {
            <span className=' text-[12px] font-medium leading-[14px] uppercase tracking-[0.48px] mt-[14%] md:mt-0'> {t("contactForMore")}</span>
             <h2 className='font-marcellus font-normal text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] 2xl:text-[44px] leading-[150%] lg:leading-[57.6px] capsizedText3 lg:capsizedText2'>@azuraworldhotel</h2>
            
-            <div className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-2 ">
-          {/* Mobil görünüm (lg'den küçük) */}
-          <span className="capsizedText4 lg:hidden">
-          Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
-          </span>
-          <span className="capsizedText4 lg:hidden">
-            {t("phoneColon")} <Link href="tel:+902425288888" className="underline z-[99] ">+90 242 528 88 88</Link>
-          </span>
-          <span className="capsizedText4 lg:hidden">
-          {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>
-          </span>
-          <span className="capsizedText4 lg:hidden">
-          {t("emailAddress")}: <Link  href="mailto:info@azuraworldhotel.com" className="underline z-[99] ">info@azuraworldhotel.com</Link>
-          </span>
-
-          {/* Desktop görünüm (lg ve üstü) */}
-          <span className="hidden lg:block">
-          Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
-          </span>
-          <span className="hidden lg:block">
-          {t("phoneColon")} <Link href="tel:+902425288888" className="underline z-[99] ">+90 242 528 88 88</Link>
-          </span>
-          <span className="hidden lg:block">
-          {t("callCenter")}: <Link href="tel:+902422771143" className="underline z-[99] ">+90 242 277 11 43</Link>
-          </span>
-          <span className="hidden lg:block">
-          {t("emailAddress")}: <Link  href="mailto:info@azuraworldhotel.com" className="underline z-20 cursor-pointer">info@azuraworldhotel.com</Link>
-          </span>
-        </div>
+            <div className="font-jost text-[14px] md:text-[16px] leading-[24px] underline-offset-2 flex flex-col gap-3 ">
+              <span className="capsizedText4">
+                Türkler Mah. Kargı Çayı Cad. No:10 Alanya / Turkey
+              </span>
+              <div className="flex flex-col gap-1">
+                <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+                  {t("reservationLabel")}
+                </span>
+                <Link href={reservationPhoneHref} className="underline z-[99] whitespace-nowrap">
+                  {reservationPhoneLabel}
+                </Link>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+                  {t("receptionLabel")}
+                </span>
+                <Link href={receptionPhoneHref} className="underline z-[99] whitespace-nowrap">
+                  {receptionPhoneLabel}
+                </Link>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-[11px] uppercase tracking-[0.64px] text-lagoBrown/80">
+                  {t("emailAddress")}
+                </span>
+                <Link href="mailto:info@azuraworldhotel.com" className="underline z-20 cursor-pointer break-all">
+                  info@azuraworldhotel.com
+                </Link>
+              </div>
+            </div>
             
             <div className='flex w-full items-center justify-center md:justify-start gap-[20px] '>
                 <div className='flex items-center justify-center gap-[18px]'>
