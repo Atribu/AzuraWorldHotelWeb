@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import img1 from "./Images/blok2.jpg";
+import img1 from "../../beachpools/Images/beach6.webp";
 import img2 from "./Images/blok1.webp";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";

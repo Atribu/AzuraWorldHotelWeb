@@ -17,7 +17,7 @@ import Form from '../GeneralComponents/Form'
 import ClinaryInfoSection from '../restaurants/components/ClinaryInfoSection'
 import BannerDark from '../GeneralComponents/BannerDark'
 import mainimage from "./Images/banner.webp"
-import blok1 from "../HomePage/Components/Images/blok2.jpg"
+import beachSectionImage from "./Images/beach6.webp"
 import blok2 from "../HomePage/Components/Images/blok1.webp"
 import {useTranslations} from 'next-intl';
 
@@ -93,7 +93,7 @@ const Page = () => {
     <div className='flex flex-col items-center justify-center bg-[#fbfbfb] gap-[60px] md:gap-[80px] lg:gap-[100px] overflow-hidden'>
     <BannerDark img={mainimage} span={t("subtitle")} header={t("title")} text={t("text")}/>
     <ClinaryInfoSection
-            img1={blok1}
+            img1={beachSectionImage}
             img2={blok2}
             span={t2("subtitle")}
             header={t2("title")}

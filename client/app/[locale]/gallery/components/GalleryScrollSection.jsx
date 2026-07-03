@@ -76,10 +76,11 @@ import img65 from "../images/Pool6.webp"
 import img66 from "../images/Pool7.webp"
 
 import img67 from "../images/Beach3.webp"
-import img68 from "../images/Beach4.webp"
-import img69 from "../images/Beach5.webp"
-import img70 from "../images/Beach8.webp"
-import img71 from "../images/Beach15.webp"
+// Kucuk plaj havuzunu gosteren beach gorselleri yayindan kaldirildi.
+// import img68 from "../images/Beach4.webp"
+// import img69 from "../images/Beach5.webp"
+// import img70 from "../images/Beach8.webp"
+// import img71 from "../images/Beach15.webp"
 import img72 from "../images/Kapalıhavuz3.webp"
 import img73 from "../images/Kapalıhavuz5.webp"
 import img74 from "../images/Kapalıhavuz6.webp"
@@ -149,7 +150,8 @@ const GalleryScrollSection = () => {
     ],
     [t("bar")]: [img59, img60, img61, img62, img63, img64, img65, img66],
     [t("pool")]: [
-      img67, img68, img69, img70, img71, img72, img73, img74, img75, img76,
+      // Kucuk plaj havuzunu gosteren gorseller gecici olarak kapatildi: img68, img69, img70, img71
+      img67, img72, img73, img74, img75, img76,
       img77, img78, img79, img80, img81, img82,
     ],
 
@@ -161,7 +163,8 @@ const GalleryScrollSection = () => {
     ],
     [t("spa")]: [
       img93, img94, img95, img96, img97, img98, img99, img100, img101, img102, img103, img104, img105, img106, img107, img108,
-      img67, img68, img70,
+      // Kucuk plaj havuzunu gosteren gorseller gecici olarak kapatildi: img68, img70
+      img67,
     ],
     [t("meeting")]: [
       // Dikey toplanti gorseli gecici olarak kapatildi: img111
