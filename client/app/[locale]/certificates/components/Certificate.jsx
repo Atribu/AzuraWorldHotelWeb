@@ -4,9 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import img1 from "../images/certificate1tr.png"
 import img2 from "../images/certificate1en.png"
-import img3 from "../images/certificate2.png"
 
-const images = [img1,img2,img3];
+const images = [img1,img2];
 
 const Certificate = () => {
   const [modalImage, setModalImage] = useState(null) 
@@ -47,7 +46,7 @@ const Certificate = () => {
         <div className="overflow-hidden w-full" ref={emblaRef}>
           <div  className="flex">
             {images.map((image,index) => (
-              <div key={index} className="flex-[0_0_80%] md:flex-[0_0_55%] lg:flex-[0_0_33.3%] xl:flex-[0_0_32.3%] min-w-0 mr-[3%] md:mr-[1.5%]">
+              <div key={index} className="flex-[0_0_80%] md:flex-[0_0_55%] lg:flex-[0_0_49.4%] xl:flex-[0_0_49.4%] min-w-0 mr-[3%] md:mr-[1.5%]">
               <div className="flex flex-col w-full items-start justify-center gap-[15px] md:gap-[25px] font-jost text-black "  onClick={() => setModalImage(image)} >
                 <Image 
                   src={image} 
