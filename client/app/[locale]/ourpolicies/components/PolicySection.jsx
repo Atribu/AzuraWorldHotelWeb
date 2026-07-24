@@ -7,13 +7,13 @@ const PolicySection = () => {
     <div className="flex w-screen h-auto items-center justify-center mt-16">
       <div className="flex flex-col items-center justify-center text-center w-[87.79%] md:w-[91.4%] xl:w-[76.8%]">
         <div className="flex flex-col w-full items-center justify-center lg:w-[65%] text-center font-jost text-black gap-[15px] md:gap-[25px] lg:gap-[35px]">
-          <span className="text-[12px] font-medium leading-[14px] uppercase tracking-[0.48px]">Azura Deluxe Hotel Sustainability</span>
+          <span className="text-[12px] font-medium leading-[14px] uppercase tracking-[0.48px]">Azura World Hotel Sustainability</span>
           <h2 className="text-[28px] md:text-[32px] lg:text-[36px] font-marcellus text-black leading-[120%] lg:leading-[57.6px] font-normal">
           SÜRDÜRÜLEBİLİR TEDARİK POLİTİKASI
           </h2>
          <div className="flex flex-col items-center justify-center text-center gap-[5px]">
          <p className="text-[14px] lg:text-[16px] font-normal leading-[24px]">
-          Azura Deluxe Hotel, insanlar ve çevre üzerindeki etkimizi iyileştirmeye kararlıdır. Bu taahhüdü yerine getirmenin bir parçası olarak, mümkün, uygun ve pratik olan her durumda en sürdürülebilir ürün ve hizmetleri tedarik ettiğimizden emin olacağız.Satın alma ile ilgili prosedürlerimiz çerçevesinde yapılan satın alımlarda tercih etmeleri beklenmektedir:
+          Azura World Hotel, insanlar ve çevre üzerindeki etkimizi iyileştirmeye kararlıdır. Bu taahhüdü yerine getirmenin bir parçası olarak, mümkün, uygun ve pratik olan her durumda en sürdürülebilir ürün ve hizmetleri tedarik ettiğimizden emin olacağız.Satın alma ile ilgili prosedürlerimiz çerçevesinde yapılan satın alımlarda tercih etmeleri beklenmektedir:
           </p>
          </div>
           <div className="flex w-full items-center justify-between">

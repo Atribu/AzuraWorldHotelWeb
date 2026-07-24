@@ -88,7 +88,7 @@ Misafirlerimize yenilenebilir enerji kullanımı ve çevre dostu uygulamalar hak
         showLink={false}
         span=""
         header=" İNSAN HAKLARI POLİTİKAMIZ"
-        text="Azura Deluxe Hotel olarak ekonomik, çevresel ve sosyal sürdürülebilirliğe katkıda bulunma vizyonuyla çalışıyoruz.
+        text="Azura World Hotel olarak ekonomik, çevresel ve sosyal sürdürülebilirliğe katkıda bulunma vizyonuyla çalışıyoruz.
 Tüm iş süreçlerinde temel insan haklarının gözetilmesini hedefliyoruz.
 Çalışanların, kendilerini geliştirebilecekleri, fikirlerini özgürce dile getirebilecekler ve ayrımcılığa maruz kalmayacakları uluslararası standartlara uygun, insan haklarına saygılı bir iş ortamı sunmayı amaçlıyoruz.
 BM İnsan Hakları Evrensel Beyannamesi kapsamında temel insan haklarına saygı duyar, bu ilkelere uygun olarak faaliyetlerimizi gerçekleştiririz.
@@ -105,7 +105,7 @@ Tüm çalışanlarımızın yasal düzenlemeler çerçevesinde dernek kurma, top
         showLink={false}
         span=""
         header="İŞ SAĞLIĞI VE GÜVENLİĞİ POLİTİKAMIZ"
-        text="Azura Deluxe Hotel tüm çalışanlar, taşeronlar ve misafirler dahil olmak üzere işyerinde bulunan herkesin sağlık, güvenlik ve refahını sağlamayı amaçlar.
+        text="Azura World Hotel tüm çalışanlar, taşeronlar ve misafirler dahil olmak üzere işyerinde bulunan herkesin sağlık, güvenlik ve refahını sağlamayı amaçlar.
 Tesis içerisinde çalışanlar, yükleniciler ve ziyaretçilerin dikkat etmeleri gereken görevleri vardır; güvenli çalışma sorumluluğunu taşımak, kendi sağlık ve güvenlikleri için tüm makul önlemleri almak ve davranışları sonucu etkilenebilecek diğer tüm insanların sağlık ve güvenliğini göz önünde bulundurmak.
 İlgili tüm faaliyetlerde ihtiyaç olduğu zaman işletmede çalışanlar ve/veya dışarıdan hizmet alımıyla uygun uzmanlardan yararlanarak iş güvenliği koşullarını iyileştirmek için tüm makul ve uygulanabilir adımları atacaktır.
 Tüm çalışanların, yüklenicilerin ve ziyaretçilerin iş güvenliğini iyileştirmek için alınacak önlemlerin geliştirilmesi ve desteklenmesi kapsamında etkin katılımını teşvik ederek bir iş güvenliği kültürü oluşturmak."
@@ -125,7 +125,7 @@ Bu standartlar işletmede sürekli iyileşmenin sağlanabilmesini kolaylaştırm
         showLink={false}
         span=""
         header="ÇOCUK KORUMA POLİTİKAMIZ"
-        text="Azura Deluxe Hotel çocukların refahını desteklemesi taahhüt eder, çocuk haklarına saygı duyma ve çocukları her türlü sömürü türlerine karşı korumak için gerekli tedbirleri alırız.
+        text="Azura World Hotel çocukların refahını desteklemesi taahhüt eder, çocuk haklarına saygı duyma ve çocukları her türlü sömürü türlerine karşı korumak için gerekli tedbirleri alırız.
 Çocukların korunmaya ve bakıma muhtaç hale gelmesini önleyici programları destekleriz.
 Suça karışmış ya da kendilerine karşı suç işlenmiş çocukların topluma kazandırılmasını sağlayacak kurum ve kuruluşlara destek oluruz.
 Çocuğa hizmet veren tüm paydaşlarla iş birliği içerisinde oluruz.
@@ -158,7 +158,7 @@ Dezavantajlı olsun ya da olmasın tüm vatandaşların çalışma hakkına sahi
         showLink={false}
         span=""
         header="SAVUNMASIZ GRUPLAR İSTİSMAR VE TACİZ POLİTİKAMIZ"
-        text="Azura Deluxe Hotel olarak, savunmasız grupların haklarını koruma ve istismar veya taciz olaylarının önlenmesine yönelik güçlü bir taahhütte bulunmaktayız. Çalışanlarımızın, misafirlerimizin ve tüm paydaşlarımızın güvende olmasını sağlamak için gereken adımları atmayı hedefliyoruz.
+        text="Azura World Hotel olarak, savunmasız grupların haklarını koruma ve istismar veya taciz olaylarının önlenmesine yönelik güçlü bir taahhütte bulunmaktayız. Çalışanlarımızın, misafirlerimizin ve tüm paydaşlarımızın güvende olmasını sağlamak için gereken adımları atmayı hedefliyoruz.
 Savunmasız gruplar, yaş, cinsiyet, etnik köken, cinsel yönelim, cinsiyet kimliği, fiziksel veya zihinsel engeller, sosyal veya ekonomik durum, göçmenlik durumu veya diğer özelliklere dayanarak maruz kaldıkları riskler nedeniyle korunmaya ihtiyaç duyan bireyleri ifade eder. Bu politika, çocuklar, gençler, yaşlılar, engelliler, göçmenler veya diğer savunmasız grupları kapsamaktadır.
 İlgili yerel yasalara, insan haklarına ve uluslararası standartlara uygun olarak savunmasız grupların istismarını ve tacizini önlemeyi taahhüt ederiz.
 "
@@ -192,7 +192,7 @@ Herkese eşit şartlarda hizmet anlayışı ve konusunda eğitimini almış pers
         showLink={false}
         span=""
         header=" TOPLUMA UYUM POLİTİKAMIZ"
-        text="Azura Deluxe Hotel olarak, içinde bulunduğumuz yerel topluluğu desteklemeye ve onlarla birlikte çalışmaya kendisini adamıştır. İşimizi, destinasyonun kültürünü ve mirasını ve yerel ekonomiyi korumaya ve tanıtmaya yardımcı olacak şekilde yürütmeyi taahhüt ediyoruz.
+        text="Azura World Hotel olarak, içinde bulunduğumuz yerel topluluğu desteklemeye ve onlarla birlikte çalışmaya kendisini adamıştır. İşimizi, destinasyonun kültürünü ve mirasını ve yerel ekonomiyi korumaya ve tanıtmaya yardımcı olacak şekilde yürütmeyi taahhüt ediyoruz.
 Yerel halkın refahına ve yaşam alanlarına katkıda bulunduğumuzdan emin olmak için, yerel topluluğumuzla sürekli bir diyalog sürdürmenin çok önemli olduğuna inanıyoruz. Bu doğrultuda,
 Topluluğu geliştiren girişimleri desteklemek.
 Yerel ekonomiyi desteklemek.

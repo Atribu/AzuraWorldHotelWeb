@@ -67,7 +67,7 @@ const Page = () => {
     <div className="flex flex-col w-screen min-h-screen items-center justify-start">
       <Banner img={mainImg2} span="" header={t("sustainability")} />
       <a
-        href="/documents/WYNDHAMALANYAHotelSürdürülebilirTurizmRaporu.pdf"
+        href="/documents/WYNDHAMALANYAHotelSürdürülebilirTurizmRaporu2026.pdf"
         onClick={handleClick}
         target="_blank"
         rel="noopener noreferrer"
