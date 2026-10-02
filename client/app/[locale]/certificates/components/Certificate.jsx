@@ -4,8 +4,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import img1 from "../images/certificate1tr.png"
 import img2 from "../images/certificate1en.png"
+import img3 from "../images/certificate2tr.png"
+import img4 from "../images/certificate2en.png"
 
-const images = [img1,img2];
+const images = [img1,img2, img3, img4];
 
 const Certificate = () => {
   const [modalImage, setModalImage] = useState(null) 
@@ -35,7 +37,7 @@ const Certificate = () => {
 
   return (
     <div className="flex w-screen h-auto items-center justify-center  max-w-[1440px] mt-[50px] mb-[100px]">
-      <div className="flex flex-col w-[93.89%] ml-[6.1%] md:ml-[4.3%] md:mr-[4.3%] md:w-[91.4%] lg:ml-0 lg:mr-0 xl:w-[76.8%] items-center justify-center gap-[30px] lg:gap-[50px] lg:min-w-[960px]">
+      <div className="flex flex-col w-[93.89%] ml-[6.1%] md:ml-[4.3%] md:mr-[4.3%] md:w-[91.4%] lg:ml-0 lg:mr-0 xl:w-[76.8%] items-center justify-center gap-[30px] lg:gap-[50px] lg:min-w-[960px] ">
     
       {/* <span className="text-[12px] font-medium uppercase tracking-[0.48px] leading-[14px] font-jost"></span> */}
     <h2 className="text-[28px] md:text-[32px] lg:text-[48px] font-marcellus font-normal leading-[120%] lg:leading-[57.6px] lg:capsizedText2">
