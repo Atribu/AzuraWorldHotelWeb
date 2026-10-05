@@ -43,12 +43,10 @@ const Certificate = () => {
     <h2 className="text-[28px] md:text-[32px] lg:text-[48px] font-marcellus font-normal leading-[120%] lg:leading-[57.6px] lg:capsizedText2">
     Certificates
     </h2>
-     
-
         <div className="overflow-hidden w-full" ref={emblaRef}>
           <div  className="flex">
             {images.map((image,index) => (
-              <div key={index} className="flex-[0_0_80%] md:flex-[0_0_55%] lg:flex-[0_0_49.4%] xl:flex-[0_0_49.4%] min-w-0 mr-[3%] md:mr-[1.5%]">
+              <div key={index} className="flex-[0_0_50%] md:flex-[0_0_26%] lg:flex-[0_0_24.5%] xl:flex-[0_0_24%] min-w-0 mr-[3%] md:mr-[1.5%]">
               <div className="flex flex-col w-full items-start justify-center gap-[15px] md:gap-[25px] font-jost text-black "  onClick={() => setModalImage(image)} >
                 <Image 
                   src={image} 
